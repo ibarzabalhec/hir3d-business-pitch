@@ -1,0 +1,4894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Market intelligence brief on the experiential, hospitality, and wellness market opportunity for ICON's 3D-printed construction technology.">
+  <meta name="author" content="Héctor Ibarzábal Rodríguez">
+  <meta name="theme-color" content="#0a0a0c">
+  <meta property="og:title" content="ICON — The Experiential Architecture Opportunity">
+  <meta property="og:description" content="A market intelligence brief on the experiential, hospitality, and wellness market opportunity for 3D-printed construction.">
+  <meta property="og:type" content="article">
+  <title>ICON — The Experiential Architecture Opportunity</title>
+  <!-- Preconnect to font CDN for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+/* ============================================================================
+   MARKET INTELLIGENCE DASHBOARD - STYLES
+   Dark theme with bronze/copper accents
+   ============================================================================ */
+
+/* CSS CUSTOM PROPERTIES */
+:root {
+  --bg: #0a0a0c;
+  --bg2: #111114;
+  --bg3: #16171b;
+  --card: #161619;
+  --card-hover: #1e1f24;
+  --border: #232429;
+  --border-light: #2e2f36;
+  --accent: #C8956C;
+  --accent-bright: #E0B088;
+  --accent-soft: rgba(200, 149, 108, 0.12);
+  --accent-glow: rgba(200, 149, 108, 0.25);
+  --text: #c8c9cd;
+  --text-bright: #f0f0f2;
+  --text-dim: #6b6d75;
+  --sourced: #6b8f5c;
+  --sourced-soft: rgba(107, 143, 92, 0.2);
+  --estimate: #c49a2a;
+  --estimate-soft: rgba(196, 154, 42, 0.2);
+  --derived: #4a7a9f;
+  --derived-soft: rgba(74, 122, 159, 0.2);
+}
+
+/* ============================================================================
+   RESET & BASE
+   ============================================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.65;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================================
+   TYPOGRAPHY
+   ============================================================================ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  color: var(--text-bright);
+}
+
+h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--text-bright);
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 700;
+  color: var(--text-bright);
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(200, 149, 108, 0.25);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-bright);
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================================
+   NAVIGATION
+   ============================================================================ */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background-color: var(--bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+.nav-brand:hover {
+  color: var(--accent-bright);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  flex: 1;
+  margin: 0 48px;
+  height: 100%;
+}
+
+.nav-links::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-link {
+  padding: 18px 16px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+.nav-link.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.nav-meta {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-right: -8px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg);
+  z-index: 999;
+  overflow-y: auto;
+  animation: slideDown 0.3s ease;
+}
+
+.mobile-menu.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu .nav-link {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  border-right: 3px solid transparent;
+}
+
+.mobile-menu .nav-link.active {
+  border-right-color: var(--accent);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ============================================================================
+   TAB CONTENT SYSTEM
+   ============================================================================ */
+.tab-content {
+  display: none;
+  opacity: 0;
+  margin-top: 56px;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================================================
+   SECTION HERO
+   ============================================================================ */
+.section-hero {
+  padding: 80px 0 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.tab-content.active:first-of-type .section-hero {
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+.section-hero .accent-line {
+  width: 64px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--accent);
+  max-width: 700px;
+  line-height: 1.6;
+  margin-top: 24px;
+}
+
+.hero-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================================================
+   SECTION HEADER
+   ============================================================================ */
+.section-header {
+  margin-bottom: 48px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--text-dim);
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* ============================================================================
+   STAT CARDS
+   ============================================================================ */
+.stat-grid {
+  display: grid;
+  gap: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.stat-grid.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.stat-grid.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.stat-grid.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stat-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
+  border-radius: 12px;
+  padding: 28px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-glow);
+  box-shadow: 0 8px 32px rgba(200, 149, 108, 0.08);
+}
+
+.stat-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: auto;
+}
+
+.stat-source {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================================================
+   BADGES
+   ============================================================================ */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+
+.badge.sourced {
+  background-color: var(--sourced-soft);
+  color: var(--sourced);
+  border: 1px solid rgba(107, 143, 92, 0.3);
+}
+
+.badge.estimate {
+  background-color: var(--estimate-soft);
+  color: var(--estimate);
+  border: 1px solid rgba(196, 154, 42, 0.3);
+}
+
+.badge.derived {
+  background-color: var(--derived-soft);
+  color: var(--derived);
+  border: 1px solid rgba(74, 122, 159, 0.3);
+}
+
+/* ============================================================================
+   CALLOUT BLOCKS
+   ============================================================================ */
+.callout {
+  background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 100%);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 28px 32px;
+  margin: 40px 0;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-bright);
+  line-height: 1.7;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.callout.narrow {
+  max-width: 780px;
+}
+
+/* ============================================================================
+   NARRATIVE BLOCKS
+   ============================================================================ */
+.narrative {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.narrative p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.narrative p strong {
+  color: var(--text-bright);
+}
+
+.narrative-lead {
+  font-size: 1.1rem;
+  color: var(--text-bright);
+}
+
+/* ============================================================================
+   DATA TABLES
+   ============================================================================ */
+.data-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.data-table-wrap table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table-wrap th {
+  padding: 14px 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  background-color: var(--bg2);
+}
+
+.data-table-wrap td {
+  padding: 14px 20px;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-table-wrap tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table-wrap tr:hover {
+  background-color: var(--card-hover);
+}
+
+.table-source {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 12px;
+  padding-left: 48px;
+  padding-right: 48px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================================
+   SECTOR CARDS (EXPANDABLE)
+   ============================================================================ */
+.sector-grid {
+  display: grid;
+  gap: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.sector-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+.sector-card:hover {
+  border-color: var(--accent);
+}
+
+.sector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+  cursor: pointer;
+  gap: 20px;
+}
+
+.sector-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}
+
+.sector-meta {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+.sector-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+.sector-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.sector-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: 0 28px;
+}
+
+.sector-card.open .sector-body {
+  max-height: 2000px;
+  padding: 0 28px 28px;
+}
+
+.brand-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.brand-pill {
+  padding: 10px 16px;
+  background-color: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.brand-pill:hover {
+  border-color: var(--accent);
+  background-color: var(--card-hover);
+}
+
+/* ============================================================================
+   CASE CARDS
+   ============================================================================ */
+.case-grid {
+  display: grid;
+  gap: 32px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.case-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.case-card:hover {
+  border-color: var(--accent-glow);
+  box-shadow: 0 8px 32px rgba(200, 149, 108, 0.08);
+}
+
+.case-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+
+.case-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  flex: 1;
+}
+
+.case-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.case-kpis {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.case-kpi {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.kpi-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.case-narrative {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.case-narrative p {
+  margin-bottom: 16px;
+}
+
+.case-source {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================================================
+   INVESTOR GRID
+   ============================================================================ */
+.investor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.investor-card {
+  background-color: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.investor-card:hover {
+  border-color: var(--accent);
+  background-color: var(--card-hover);
+}
+
+.investor-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 8px;
+}
+
+.investor-type {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.investor-link {
+  display: block;
+  margin-top: 8px;
+}
+
+.investor-link a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.investor-link a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* ============================================================================
+   SOURCE SECTION
+   ============================================================================ */
+.source-section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 32px;
+}
+
+.source-category {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.source-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.source-item:last-child {
+  border-bottom: none;
+}
+
+.source-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.source-name a {
+  color: var(--accent);
+}
+
+.source-desc {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+/* ============================================================================
+   REVEAL ANIMATIONS
+   ============================================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.7s ease;
+}
+
+.reveal-delay-1.visible {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2.visible {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3.visible {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4.visible {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5.visible {
+  transition-delay: 0.5s;
+}
+
+.reveal-delay-6.visible {
+  transition-delay: 0.6s;
+}
+
+/* ============================================================================
+   UTILITY CLASSES
+   ============================================================================ */
+.mt-sm {
+  margin-top: 8px;
+}
+
+.mt-md {
+  margin-top: 16px;
+}
+
+.mt-lg {
+  margin-top: 32px;
+}
+
+.mt-xl {
+  margin-top: 48px;
+}
+
+.mb-sm {
+  margin-bottom: 8px;
+}
+
+.mb-md {
+  margin-bottom: 16px;
+}
+
+.mb-lg {
+  margin-bottom: 32px;
+}
+
+.mb-xl {
+  margin-bottom: 48px;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-bright {
+  color: var(--text-bright);
+}
+
+.text-dim {
+  color: var(--text-dim);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* ============================================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================================ */
+@media (max-width: 1024px) {
+  .nav-inner,
+  .container,
+  .section-hero,
+  .section-header,
+  .stat-grid,
+  .data-table-wrap,
+  .sector-grid,
+  .case-grid,
+  .investor-grid,
+  .source-section,
+  .narrative,
+  .callout {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .stat-grid.cols-4,
+  .stat-grid.cols-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .nav-links {
+    margin: 0 24px;
+  }
+
+  .nav-meta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-inner {
+    justify-content: space-between;
+  }
+
+  .nav-brand {
+    font-size: 0.6rem;
+  }
+
+  .nav-inner > .nav-links {
+    display: none;
+  }
+
+  .mobile-menu .nav-link {
+    border-right: 3px solid transparent;
+  }
+
+  .mobile-menu .nav-link.active {
+    border-right-color: var(--accent);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner,
+  .container,
+  .section-hero,
+  .section-header,
+  .stat-grid,
+  .data-table-wrap,
+  .sector-grid,
+  .case-grid,
+  .investor-grid,
+  .source-section,
+  .narrative,
+  .callout {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section-hero {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+  }
+
+  h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  }
+
+  .stat-grid {
+    gap: 12px;
+  }
+
+  .stat-grid.cols-2,
+  .stat-grid.cols-3,
+  .stat-grid.cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-card {
+    padding: 20px;
+    min-height: 160px;
+  }
+
+  .brand-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .case-header {
+    flex-direction: column;
+  }
+
+  .case-kpis {
+    gap: 24px;
+  }
+
+  .investor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .callout {
+    padding: 20px 24px;
+    margin: 32px 0;
+    font-size: 1rem;
+  }
+
+  /* Hero inline min-height override */
+  .section-hero-image {
+    min-height: 55vh !important;
+  }
+
+  /* Case card padding reduction */
+  .case-card {
+    padding: 24px;
+  }
+
+  /* Shift card padding reduction */
+  .shift-card {
+    padding: 24px 20px;
+  }
+
+  /* Cost comparison padding reduction */
+  .cost-comparison {
+    padding: 24px;
+  }
+
+  /* Timeline mobile adjustment */
+  .timeline {
+    padding-left: 32px;
+  }
+  .timeline-marker {
+    left: -28px;
+  }
+
+  /* Table source padding */
+  .table-source {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-inner,
+  .container,
+  .section-hero,
+  .section-header,
+  .stat-grid,
+  .data-table-wrap,
+  .sector-grid,
+  .case-grid,
+  .investor-grid,
+  .source-section,
+  .narrative,
+  .callout {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section {
+    padding: 32px 0;
+  }
+
+  .section-hero {
+    padding-top: 72px;
+    padding-bottom: 32px;
+  }
+
+  .nav-brand {
+    font-size: 0.55rem;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  h2 {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+  }
+
+  .stat-grid.cols-2,
+  .stat-grid.cols-3,
+  .stat-grid.cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 16px;
+    min-height: 140px;
+  }
+
+  .stat-number {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-kpis {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .investor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+  }
+
+  .investor-card {
+    padding: 12px;
+  }
+
+  .investor-name {
+    font-size: 0.8rem;
+  }
+
+  .callout {
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .table-source {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Hero inline min-height override - small mobile */
+  .section-hero-image {
+    min-height: 50vh !important;
+  }
+
+  /* Case card padding - small mobile */
+  .case-card {
+    padding: 20px 16px;
+  }
+
+  /* Case KPI values */
+  .kpi-value {
+    font-size: 1.2rem;
+  }
+
+  /* Shift card padding - small mobile */
+  .shift-card {
+    padding: 20px 16px;
+  }
+  .shift-card h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Cost comparison - small mobile */
+  .cost-comparison {
+    padding: 20px 16px;
+  }
+
+  /* Timeline - small mobile */
+  .timeline {
+    padding-left: 24px;
+  }
+  .timeline::before {
+    left: 4px;
+  }
+  .timeline-marker {
+    left: -24px;
+    width: 10px;
+    height: 10px;
+  }
+  .timeline-content {
+    font-size: 0.88rem;
+  }
+
+  /* IP row - small mobile */
+  .ip-row {
+    padding: 14px 16px;
+  }
+  .ip-source, .ip-destination {
+    font-size: 0.82rem;
+  }
+  .ip-impact {
+    font-size: 0.75rem;
+  }
+
+  /* Convergence visual tags */
+  .convergence-tag {
+    font-size: 0.7rem;
+    padding: 6px 10px;
+  }
+
+  /* Hero subtitle / meta on small mobile */
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+  .hero-meta {
+    font-size: 0.72rem;
+  }
+}
+
+/* ============================================================================
+   PRINT STYLES
+   ============================================================================ */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  .main-nav {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .tab-content {
+    margin-top: 0;
+  }
+
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* ============================================================================
+   SCROLLBAR STYLING
+   ============================================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
+}
+
+/* ============================================================================
+   ANIMATIONS FOR INTERACTIVE ELEMENTS
+   ============================================================================ */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+    /* ============================================================================
+       HERO IMAGES & VISUAL FLARE
+       ============================================================================ */
+
+    /* Section Hero with Background Image */
+    .section-hero-image {
+      position: relative;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 80px 48px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+    }
+
+    .section-hero-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        var(--bg) 0%,
+        rgba(10, 10, 12, 0.92) 25%,
+        rgba(10, 10, 12, 0.65) 50%,
+        rgba(10, 10, 12, 0.35) 75%,
+        rgba(10, 10, 12, 0.15) 100%
+      );
+      z-index: 1;
+    }
+
+    .section-hero-image > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-hero-image .hero-content-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Tab Section Headers with Mini Hero */
+    .tab-hero {
+      position: relative;
+      min-height: 320px;
+      display: flex;
+      align-items: flex-end;
+      padding: 48px;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 48px;
+      border-radius: 0 0 16px 16px;
+      overflow: hidden;
+    }
+
+    .tab-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        var(--bg) 0%,
+        rgba(10, 10, 12, 0.88) 40%,
+        rgba(10, 10, 12, 0.4) 100%
+      );
+      z-index: 1;
+    }
+
+    .tab-hero > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .tab-hero .section-header {
+      margin-bottom: 0;
+      padding: 0;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    /* Animated Gradient Accent Line */
+    .accent-line-animated {
+      width: 80px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-bright), var(--accent));
+      background-size: 200% 100%;
+      animation: gradientShift 3s ease infinite;
+      margin-bottom: 24px;
+      border-radius: 2px;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Glowing stat card on hover */
+    .stat-card {
+      position: relative;
+    }
+
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, transparent 50%, var(--accent-glow) 100%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+    }
+
+    .stat-card:hover::before {
+      opacity: 1;
+    }
+
+    /* Subtle floating particles effect on hero */
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .hero-particles .particle {
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .hero-particles .particle:nth-child(1)  { left: 10%; top: 20%; animation-delay: 0s;   animation-duration: 5s; }
+    .hero-particles .particle:nth-child(2)  { left: 25%; top: 40%; animation-delay: 0.6s; animation-duration: 7s; }
+    .hero-particles .particle:nth-child(3)  { left: 50%; top: 15%; animation-delay: 1.2s; animation-duration: 4.5s; }
+    .hero-particles .particle:nth-child(4)  { left: 70%; top: 60%; animation-delay: 1.8s; animation-duration: 6s; }
+    .hero-particles .particle:nth-child(5)  { left: 85%; top: 30%; animation-delay: 2.4s; animation-duration: 7.5s; }
+    .hero-particles .particle:nth-child(6)  { left: 40%; top: 70%; animation-delay: 3s;   animation-duration: 5.5s; }
+    .hero-particles .particle:nth-child(7)  { left: 60%; top: 80%; animation-delay: 0.8s; animation-duration: 6.5s; }
+    .hero-particles .particle:nth-child(8)  { left: 15%; top: 65%; animation-delay: 2s;   animation-duration: 5s; }
+    .hero-particles .particle:nth-child(9)  { left: 5%;  top: 45%; animation-delay: 0.3s; animation-duration: 6s; }
+    .hero-particles .particle:nth-child(10) { left: 35%; top: 10%; animation-delay: 1.5s; animation-duration: 4s; }
+    .hero-particles .particle:nth-child(11) { left: 78%; top: 45%; animation-delay: 2.7s; animation-duration: 7s; }
+    .hero-particles .particle:nth-child(12) { left: 92%; top: 70%; animation-delay: 0.4s; animation-duration: 5.5s; }
+    .hero-particles .particle:nth-child(13) { left: 20%; top: 85%; animation-delay: 1s;   animation-duration: 6s; }
+    .hero-particles .particle:nth-child(14) { left: 55%; top: 50%; animation-delay: 3.2s; animation-duration: 4.5s; }
+    .hero-particles .particle:nth-child(15) { left: 45%; top: 30%; animation-delay: 2.1s; animation-duration: 7.5s; }
+    .hero-particles .particle:nth-child(16) { left: 68%; top: 15%; animation-delay: 0.7s; animation-duration: 5s; }
+
+    @keyframes float {
+      0% { opacity: 0; transform: translateY(20px) scale(1); }
+      20% { opacity: 0.8; }
+      50% { opacity: 0.4; transform: translateY(-50px) scale(1.8); }
+      80% { opacity: 0.7; }
+      100% { opacity: 0; transform: translateY(-100px) scale(0.5); }
+    }
+
+    /* Callout glow enhancement */
+    .callout {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .callout::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    /* Inline Content Images — full-width hero images interspersed in text */
+    .content-image {
+      position: relative;
+      max-width: 900px;
+      margin: 32px auto;
+      padding: 0 48px;
+    }
+
+    .content-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      object-fit: cover;
+      max-height: 340px;
+    }
+
+    .content-image .image-caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 10px;
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      letter-spacing: 0.02em;
+    }
+
+    .content-image .image-caption a {
+      color: var(--text-dim);
+      border-bottom: 1px solid rgba(200,149,108,0.2);
+      transition: color 0.2s;
+    }
+
+    .content-image .image-caption a:hover {
+      color: var(--accent);
+    }
+
+    /* Image credit */
+    .image-credit {
+      position: absolute;
+      bottom: 12px;
+      right: 16px;
+      font-size: 0.6rem;
+      color: rgba(255,255,255,0.25);
+      z-index: 3;
+      letter-spacing: 0.5px;
+    }
+
+    .image-credit a {
+      color: rgba(255,255,255,0.35);
+      border-bottom: none;
+    }
+
+    /* Stat counter animation class */
+    .stat-number[data-value] {
+      transition: color 0.3s ease;
+    }
+
+    /* Section divider with accent */
+    .section-divider-accent {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent-glow), transparent);
+      margin: 48px 0;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Responsive hero images */
+    @media (max-width: 768px) {
+      .section-hero-image {
+        min-height: 55vh;
+        padding: 48px 24px;
+      }
+
+      .tab-hero {
+        min-height: 240px;
+        padding: 32px 24px;
+        border-radius: 0;
+      }
+
+      .content-image {
+        padding: 0 24px;
+        margin: 24px auto;
+      }
+
+      .content-image img {
+        max-height: 260px;
+        border-radius: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content-image {
+        padding: 0 16px;
+        margin: 16px auto;
+      }
+
+      .content-image img {
+        max-height: 200px;
+      }
+
+      .content-image .image-caption {
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .section-hero-image {
+        min-height: 50vh;
+        padding: 32px 16px;
+      }
+
+      .tab-hero {
+        min-height: 200px;
+        padding: 24px 16px;
+      }
+    }
+
+    /* ============================================================================
+       ADDITIONAL STYLES FOR MISSING COMPONENTS
+       ============================================================================ */
+    .contact-block {
+      text-align: center;
+      padding: 48px 0;
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+    }
+    .contact-name {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text-bright);
+      margin-bottom: 8px;
+    }
+    .contact-detail {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+    .contact-detail a {
+      color: var(--accent);
+    }
+
+    .legend {
+      margin: 32px auto;
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 0.85rem;
+      color: var(--text);
+    }
+
+    .source-footer {
+      max-width: 1200px;
+      margin: 48px auto 0;
+      padding: 32px 48px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-style: italic;
+    }
+    .source-footer p {
+      margin: 0;
+    }
+
+    /* Fix: sector cards need spacing between them */
+    .sector-card + .sector-card {
+      margin-top: 16px;
+    }
+
+    /* Fix: case cards need spacing */
+    .case-card + .case-card {
+      margin-top: 24px;
+    }
+
+    /* Fix: data-table-wrap should NOT have left/right padding - the border wraps the table */
+    /* Override the padding from the CSS */
+    .data-table-wrap {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin-left: 48px;
+      margin-right: 48px;
+      max-width: calc(1200px - 96px);
+    }
+    @media (max-width: 1024px) {
+      .data-table-wrap { margin-left: 32px; margin-right: 32px; max-width: calc(100% - 64px); }
+    }
+    @media (max-width: 768px) {
+      .data-table-wrap { margin-left: 24px; margin-right: 24px; max-width: calc(100% - 48px); }
+      .legend { padding-left: 24px; padding-right: 24px; }
+      .source-footer { padding-left: 24px; padding-right: 24px; }
+    }
+    @media (max-width: 480px) {
+      .data-table-wrap { margin-left: 16px; margin-right: 16px; max-width: calc(100% - 32px); }
+      .legend { padding-left: 16px; padding-right: 16px; }
+      .source-footer { padding-left: 16px; padding-right: 16px; }
+    }
+
+    /* Fix nested .narrative inside .stat-card - remove max-width and padding */
+    .stat-card .narrative {
+      max-width: none;
+      padding: 0;
+      margin: 0;
+    }
+    .stat-card .narrative p {
+      margin-bottom: 0;
+    }
+
+    /* Fix case-kpis layout - should be pairs of value+label */
+    .case-kpi {
+      min-width: 100px;
+    }
+
+    /* SHIFT GRID - Tab 02 visual layout */
+    .shift-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 2rem 0;
+    }
+    .shift-card {
+      padding: 32px 28px;
+      border-radius: 8px;
+      background: var(--card);
+      border: 1px solid var(--border);
+    }
+    .shift-card h3 {
+      margin: 12px 0 8px;
+      font-size: 1.25rem;
+    }
+    .shift-card p {
+      font-size: 0.92rem;
+      color: var(--text);
+      margin: 0;
+      line-height: 1.55;
+    }
+    .shift-direction {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .shift-declining .shift-direction { color: #c45c5c; }
+    .shift-center .shift-direction { color: var(--text-dim); }
+    .shift-rising .shift-direction { color: var(--sourced); }
+    .shift-declining { border-top: 3px solid #c45c5c; }
+    .shift-center { border-top: 3px solid var(--text-dim); }
+    .shift-rising { border-top: 3px solid var(--sourced); }
+
+    /* IP PIPELINE - Tab 02 White Lotus visual */
+    .ip-pipeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .ip-row {
+      display: grid;
+      grid-template-columns: 180px 40px 1fr 1fr;
+      align-items: center;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+      gap: 16px;
+    }
+    .ip-row:last-child { border-bottom: none; }
+    .ip-source {
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+    .ip-arrow {
+      color: var(--text-dim);
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .ip-destination {
+      color: var(--text-bright);
+      font-size: 0.9rem;
+    }
+    .ip-impact {
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      font-style: italic;
+    }
+
+    /* COST COMPARISON - Tab 03 visual bars */
+    .cost-comparison {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin: 2rem 0;
+      padding: 32px;
+      background: var(--card);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+    .cost-item {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .cost-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .cost-bar {
+      height: 8px;
+      border-radius: 4px;
+      transition: width 1s ease;
+    }
+    .cost-conventional .cost-bar { background: #c45c5c; }
+    .cost-icon .cost-bar { background: var(--sourced); }
+    .cost-detail {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* CONVERGENCE VISUAL - Tab 04 */
+    .convergence-visual {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 40px 24px;
+      margin: 1rem 0;
+    }
+    .convergence-tag {
+      padding: 10px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.88rem;
+      color: var(--text-bright);
+      font-weight: 500;
+    }
+    .convergence-connector {
+      color: var(--accent);
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .convergence-result {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent-bright);
+      font-weight: 600;
+    }
+
+    /* TIMELINE - Tab 07 */
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+      margin: 2rem 0;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 36px;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-marker {
+      position: absolute;
+      left: -36px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--border-light);
+      border: 2px solid var(--bg);
+    }
+    .timeline-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .timeline-content {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+      max-width: 680px;
+    }
+
+    /* Responsive adjustments for new components */
+    @media (max-width: 768px) {
+      .shift-grid { grid-template-columns: 1fr; gap: 16px; }
+      .shift-card { padding: 24px 20px; }
+      .ip-row { grid-template-columns: 1fr; gap: 6px; padding: 16px; }
+      .ip-arrow { display: none; }
+      .convergence-visual { flex-direction: column; }
+      .cost-comparison { padding: 24px; }
+    }
+
+    @media (max-width: 480px) {
+      .shift-grid { gap: 12px; }
+      .shift-card { padding: 20px 16px; }
+      .shift-card h3 { font-size: 1.1rem; }
+      .ip-row { padding: 14px 16px; gap: 4px; }
+      .ip-source, .ip-destination { font-size: 0.82rem; }
+      .cost-comparison { padding: 20px 16px; }
+      .cost-detail { font-size: 0.82rem; }
+      .convergence-tag { font-size: 0.75rem; padding: 8px 12px; }
+      .timeline { padding-left: 24px; }
+      .timeline::before { left: 4px; }
+      .timeline-marker { left: -24px; width: 10px; height: 10px; }
+      .timeline-content { font-size: 0.88rem; }
+    }
+
+    /* ============================================================================
+       COMPREHENSIVE MOBILE OVERRIDES — final cascade layer
+       These use !important where needed to override inline styles
+       ============================================================================ */
+
+    /* Featured callout responsive padding */
+    .callout-featured {
+      padding: 48px 40px;
+    }
+
+    /* Stat-source-wide responsive padding */
+    .stat-source-wide {
+      padding: 0 48px;
+    }
+
+    /* Prevent any horizontal overflow on mobile */
+    @media (max-width: 768px) {
+      html, body {
+        overflow-x: hidden;
+      }
+
+      /* Featured callout shrink */
+      .callout-featured {
+        padding: 32px 24px !important;
+      }
+
+      /* Stat source wide */
+      .stat-source-wide {
+        padding: 0 24px;
+      }
+
+      /* Ensure all images respect container */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Brand grid — 1 col on tablet-portrait */
+      .brand-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+      }
+
+      /* Sector grid */
+      .sector-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Case grid */
+      .case-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      /* Ensure narrative text doesn't overflow */
+      .narrative {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+      }
+
+      /* Nav links in mobile menu */
+      .mobile-menu {
+        padding: 16px 0;
+      }
+
+      /* Data tables: enable horizontal scroll */
+      .data-table-wrap {
+        -webkit-overflow-scrolling: touch;
+      }
+
+      table {
+        min-width: 480px;
+      }
+
+      /* Touch-friendly link targets */
+      a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* Exception: inline narrative links */
+      .narrative a,
+      .stat-source a,
+      .image-caption a,
+      .callout a,
+      p a {
+        min-height: auto;
+        display: inline;
+      }
+    }
+
+    @media (max-width: 480px) {
+      /* Featured callout extra-small */
+      .callout-featured {
+        padding: 24px 16px !important;
+      }
+
+      .callout-featured h3 {
+        font-size: clamp(1.2rem, 4vw, 1.6rem) !important;
+      }
+
+      .callout-featured p {
+        font-size: 0.95rem !important;
+      }
+
+      /* Stat source wide */
+      .stat-source-wide {
+        padding: 0 16px;
+      }
+
+      /* Ensure stat cards don't overflow text */
+      .stat-number {
+        word-break: break-word;
+      }
+
+      /* Tighter section spacing */
+      .section-divider-accent {
+        margin: 32px 0;
+      }
+
+      /* Hero subtitle inline override */
+      .hero-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.5;
+      }
+
+      /* Cost comparison bars — ensure they fit */
+      .cost-bar {
+        min-width: 0;
+      }
+
+      /* IP table stacking */
+      .ip-row {
+        grid-template-columns: 1fr !important;
+        gap: 4px;
+      }
+      .ip-arrow {
+        display: none !important;
+      }
+
+      /* Convergence visual stacking */
+      .convergence-visual {
+        flex-direction: column !important;
+        gap: 8px;
+      }
+
+      /* Brand cards tighter */
+      .stat-card .narrative {
+        font-size: 0.85rem !important;
+      }
+    }
+
+    /* 375px — iPhone SE and smaller */
+    @media (max-width: 375px) {
+      .nav-brand {
+        font-size: 0.5rem;
+        letter-spacing: 0.5px;
+      }
+
+      h1 {
+        font-size: 1.4rem !important;
+      }
+
+      h2 {
+        font-size: 1rem !important;
+      }
+
+      .stat-card {
+        padding: 14px;
+        min-height: auto;
+      }
+
+      .stat-number {
+        font-size: 1.2rem !important;
+      }
+
+      .content-image {
+        padding: 0 12px;
+        margin: 12px auto;
+      }
+
+      .content-image img {
+        max-height: 160px;
+      }
+
+      .callout {
+        padding: 14px 16px !important;
+        font-size: 0.88rem !important;
+      }
+
+      .section {
+        padding: 24px 0;
+      }
+
+      .section-hero {
+        padding-top: 64px;
+        padding-bottom: 24px;
+      }
+    }
+
+    /* ============================================================================
+       WOW FACTOR — Premium visual enhancements
+       ============================================================================ */
+
+    /* Animated accent line on section headers */
+    .accent-line-animated {
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-bright), var(--accent));
+      margin-bottom: 24px;
+      transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      background-size: 200% 100%;
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    .visible .accent-line-animated,
+    .tab-hero .accent-line-animated {
+      width: 64px;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* Stat card number glow on hover */
+    .stat-card:hover .stat-number {
+      text-shadow: 0 0 20px rgba(200, 149, 108, 0.3);
+    }
+
+    /* Subtle parallax on hero backgrounds */
+    .section-hero-image,
+    .tab-hero {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      transition: background-position 0.3s ease;
+    }
+
+    /* Disable parallax on mobile (performance) */
+    @media (max-width: 768px) {
+      .section-hero-image,
+      .tab-hero {
+        background-attachment: scroll !important;
+      }
+    }
+
+    /* Smooth nav background on scroll */
+    .main-nav {
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .main-nav.scrolled {
+      background-color: rgba(10, 10, 12, 0.95);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Callout block hover glow */
+    .callout {
+      transition: all 0.4s ease;
+    }
+
+    .callout:hover {
+      border-left-color: var(--accent-bright);
+      box-shadow: -4px 0 16px rgba(200, 149, 108, 0.12);
+    }
+
+    /* Brand pill micro-interaction */
+    .brand-pill {
+      transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .brand-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(200, 149, 108, 0.1);
+    }
+
+    /* Content image reveal animation */
+    .content-image {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .content-image.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Image hover zoom effect */
+    .content-image img {
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .content-image:hover img {
+      transform: scale(1.02);
+    }
+
+    /* Investor card staggered reveal */
+    .investor-card {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 0.5s ease;
+    }
+
+    .visible .investor-card {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .visible .investor-card:nth-child(1) { transition-delay: 0.05s; }
+    .visible .investor-card:nth-child(2) { transition-delay: 0.1s; }
+    .visible .investor-card:nth-child(3) { transition-delay: 0.15s; }
+    .visible .investor-card:nth-child(4) { transition-delay: 0.2s; }
+    .visible .investor-card:nth-child(5) { transition-delay: 0.25s; }
+    .visible .investor-card:nth-child(6) { transition-delay: 0.3s; }
+
+    /* Sector card expand animation */
+    .sector-body {
+      transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                  padding 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .sector-toggle {
+      transition: all 0.3s ease, transform 0.3s ease;
+    }
+
+    .sector-card.open .sector-toggle {
+      transform: rotate(90deg);
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    /* Case card KPI value animation */
+    .kpi-value {
+      transition: color 0.3s ease;
+    }
+
+    .case-card:hover .kpi-value {
+      color: var(--accent-bright);
+    }
+
+    /* Tab transition enhancement */
+    .tab-content.active {
+      animation: tabReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @keyframes tabReveal {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hero text entrance animation */
+    .section-hero-image .hero-content-inner h1,
+    .section-hero-image .hero-subtitle,
+    .section-hero-image .hero-meta {
+      opacity: 0;
+      transform: translateY(16px);
+      animation: heroTextIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .section-hero-image .hero-content-inner h1 {
+      animation-delay: 0.2s;
+    }
+
+    .section-hero-image .hero-subtitle {
+      animation-delay: 0.4s;
+    }
+
+    .section-hero-image .hero-meta {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes heroTextIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Gradient border glow on focus */
+    .nav-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    /* Data table row hover highlight */
+    .data-table-wrap tr {
+      transition: background-color 0.2s ease;
+    }
+
+    /* Smooth scroll indicator for current section */
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    /* Source section staggered items */
+    .source-item {
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: all 0.4s ease;
+    }
+
+    .visible .source-item {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .visible .source-item:nth-child(1) { transition-delay: 0.05s; }
+    .visible .source-item:nth-child(2) { transition-delay: 0.1s; }
+    .visible .source-item:nth-child(3) { transition-delay: 0.15s; }
+    .visible .source-item:nth-child(4) { transition-delay: 0.2s; }
+    .visible .source-item:nth-child(5) { transition-delay: 0.25s; }
+    .visible .source-item:nth-child(6) { transition-delay: 0.3s; }
+    .visible .source-item:nth-child(7) { transition-delay: 0.35s; }
+
+    /* Cost bar animation */
+    .cost-bar {
+      transition: width 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Selection color */
+    ::selection {
+      background: rgba(200, 149, 108, 0.3);
+      color: var(--text-bright);
+    }
+
+    /* Scrollbar styling (Webkit) */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--border-light);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+
+    /* Firefox scrollbar */
+    html {
+      scrollbar-width: thin;
+      scrollbar-color: var(--border-light) var(--bg);
+    }
+
+    /* ============================================================================
+       VIDEO HERO
+       ============================================================================ */
+    .hero-video-wrap {
+      position: relative;
+      width: 100%;
+      min-height: 80vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-video-wrap video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 0;
+    }
+    .hero-video-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(18, 18, 18, 0.45) 0%,
+        rgba(18, 18, 18, 0.6) 50%,
+        rgba(18, 18, 18, 0.85) 100%
+      );
+      z-index: 1;
+    }
+    .hero-video-wrap .hero-content-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 0 24px;
+    }
+    .hero-video-wrap .image-credit {
+      position: absolute;
+      bottom: 12px;
+      right: 16px;
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      .hero-video-wrap { min-height: 60vh; }
+      .hero-video-wrap video { display: none; }
+      .hero-video-wrap {
+        background-image: url('https://images.unsplash.com/photo-1553334609-ef3a8c0a6766?w=1200&q=80&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-video-wrap video { display: none; }
+      .hero-video-wrap {
+        background-image: url('https://images.unsplash.com/photo-1553334609-ef3a8c0a6766?w=1200&q=80&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    /* ============================================================================
+       MARKET CONVERGENCE CHART
+       ============================================================================ */
+    .market-chart {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 0;
+    }
+    .market-chart-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 24px;
+    }
+    .chart-bar-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .chart-bar-label {
+      width: 160px;
+      flex-shrink: 0;
+      font-size: 0.82rem;
+      color: var(--text);
+      text-align: right;
+      font-weight: 500;
+    }
+    .chart-bar-track {
+      flex: 1;
+      height: 28px;
+      background: var(--card);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+    .chart-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+      width: 0%;
+      transition: width 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .chart-bar-fill.animated { /* width set via style */ }
+    .chart-bar-value {
+      width: 70px;
+      flex-shrink: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent-bright);
+    }
+    .chart-total-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .chart-total-label {
+      width: 160px;
+      flex-shrink: 0;
+      font-size: 0.82rem;
+      color: var(--text-bright);
+      text-align: right;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .chart-total-bar {
+      flex: 1;
+      height: 34px;
+      background: var(--card);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .chart-total-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, var(--accent), #d4a574, var(--accent-bright));
+      background-size: 200% 100%;
+      animation: shimmer 3s ease-in-out infinite;
+      width: 0%;
+      transition: width 1.8s cubic-bezier(0.22, 1, 0.36, 1);
+      transition-delay: 0.6s;
+    }
+    .chart-total-value {
+      width: 70px;
+      flex-shrink: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-bright);
+    }
+    @media (max-width: 480px) {
+      .chart-bar-label, .chart-total-label { width: 90px; font-size: 0.72rem; }
+      .chart-bar-value, .chart-total-value { width: 55px; font-size: 0.78rem; }
+      .chart-bar-track, .chart-total-bar { height: 22px; }
+    }
+
+    /* ============================================================================
+       iPad RESPONSIVE (1024px fine-tuning)
+       ============================================================================ */
+    @media (min-width: 769px) and (max-width: 1024px) {
+      .section-hero-image {
+        min-height: 60vh !important;
+      }
+
+      .stat-grid.cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .case-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        margin: 0 16px;
+      }
+
+      .nav-link {
+        padding: 18px 10px;
+        font-size: 0.58rem;
+      }
+
+      .sector-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .shift-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+
+      .ip-row {
+        grid-template-columns: 150px 30px 1fr 1fr;
+      }
+
+      .content-image {
+        max-width: 700px;
+      }
+
+      .content-image img {
+        max-height: 280px;
+      }
+
+      /* Tab hero on iPad */
+      .tab-hero {
+        min-height: 200px;
+        padding: 40px 32px;
+      }
+    }
+
+    /* ============================================================================
+       ACCESSIBILITY
+       ============================================================================ */
+
+    /* Focus visible for keyboard navigation */
+    *:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .section-hero-image,
+      .tab-hero {
+        background-attachment: scroll !important;
+      }
+    }
+
+    /* High contrast mode support */
+    @media (prefers-contrast: high) {
+      :root {
+        --border: #444;
+        --border-light: #555;
+        --text-dim: #999;
+      }
+
+      .stat-card {
+        border-width: 2px;
+      }
+    }
+
+    /* Print: already covered in main print block */
+
+    /* ============================================================================
+       VISUAL DESIGN POLISH — Final details
+       ============================================================================ */
+
+    /* Stat card subtle gradient background */
+    .stat-card {
+      background: linear-gradient(
+        135deg,
+        var(--card) 0%,
+        rgba(22, 22, 25, 0.95) 50%,
+        rgba(30, 31, 36, 0.4) 100%
+      );
+    }
+
+    /* Enhanced callout typography */
+    .callout::first-line {
+      font-weight: 600;
+    }
+
+    /* Narrative lead drop cap feel — not actual drop cap, just stronger first line */
+    .narrative-lead {
+      font-size: 1.12rem;
+      color: var(--text-bright);
+      line-height: 1.75;
+    }
+
+    /* Source footer signature line */
+    .source-footer {
+      position: relative;
+    }
+
+    .source-footer::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+      margin-bottom: 24px;
+    }
+
+    /* Legend item spacing */
+    .legend-item + .legend-item {
+      margin-top: 8px;
+    }
+
+    /* Tab hero image credit positioning */
+    .image-credit {
+      position: absolute;
+      bottom: 12px;
+      right: 16px;
+      font-size: 0.6rem;
+      color: rgba(255, 255, 255, 0.4);
+      z-index: 3;
+    }
+
+    .image-credit a {
+      color: rgba(255, 255, 255, 0.5);
+      border: none;
+    }
+
+    /* Subtle border animation on active nav link */
+    .nav-link.active {
+      border-bottom-color: var(--accent);
+      transition: border-bottom-color 0.3s ease;
+    }
+
+    /* Footer styling */
+    footer {
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    footer:hover {
+      opacity: 1;
+    }
+
+    /* Stat number monospace alignment polish */
+    .stat-number {
+      letter-spacing: -0.5px;
+    }
+
+    /* Case card narrative first paragraph */
+    .case-narrative p:first-child {
+      font-size: 1rem;
+      color: var(--text-bright);
+    }
+
+    /* Badge micro-polish */
+    .badge {
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    /* Sector card open state glow */
+    .sector-card.open {
+      border-color: var(--accent-glow);
+      box-shadow: 0 4px 16px rgba(200, 149, 108, 0.06);
+    }
+
+    /* Brand pill truncation for mobile */
+    @media (max-width: 480px) {
+      .brand-pill {
+        font-size: 0.78rem;
+        padding: 8px 12px;
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <button class="nav-brand" onclick="activateTab('01')" style="cursor:pointer; background:none; border:none; font-family:inherit;">ICON · MARKET BRIEF</button>
+      <div class="nav-links">
+        <button class="nav-link active" data-tab="01">01 Overview</button>
+        <button class="nav-link" data-tab="02">02 The Structural Shift</button>
+        <button class="nav-link" data-tab="03">03 The Geometry Premium</button>
+        <button class="nav-link" data-tab="04">04 The Market Canvas</button>
+        <button class="nav-link" data-tab="05">05 The Buyer Landscape</button>
+        <button class="nav-link" data-tab="06">06 Case Precedents</button>
+        <button class="nav-link" data-tab="07">07 Héctor Ibarzábal</button>
+        <button class="nav-link" data-tab="08">08 Sources</button>
+      </div>
+      <div class="nav-meta">MARCH 2026</div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+    <button class="nav-link active" data-tab="01">01 Overview</button>
+    <button class="nav-link" data-tab="02">02 The Structural Shift</button>
+    <button class="nav-link" data-tab="03">03 The Geometry Premium</button>
+    <button class="nav-link" data-tab="04">04 The Market Canvas</button>
+    <button class="nav-link" data-tab="05">05 The Buyer Landscape</button>
+    <button class="nav-link" data-tab="06">06 Case Precedents</button>
+    <button class="nav-link" data-tab="07">07 Héctor Ibarzábal</button>
+    <button class="nav-link" data-tab="08">08 Sources</button>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main role="main" aria-label="ICON Market Intelligence Dashboard">
+<section id="tab-01" class="tab-content active">
+  <div class="section-hero-image reveal" style="background-image: url('https://images.unsplash.com/photo-1553334609-ef3a8c0a6766?w=1800&q=80&auto=format&fit=crop'); min-height: 80vh;">
+    <div class="hero-particles">
+      <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+      <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+      <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+      <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    </div>
+    <div class="hero-content-inner">
+      <div class="accent-line-animated"></div>
+      <h1 style="max-width: 900px; margin-bottom: 24px;">The Most Valuable Architecture Won't Be Rectangular.</h1>
+      <div class="hero-subtitle" style="font-size: 1.3rem; max-width: 750px;">A market intelligence brief on the experiential, hospitality, and wellness market opportunity for 3D-printed construction.</div>
+      <div class="hero-meta" style="margin-top: 32px;">March 2026 · Héctor Ibarzábal Rodríguez · Rice University</div>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@mahdibafande">Unsplash</a></span>
+  </div>
+
+  <div class="container reveal-delay-1">
+    <div class="narrative" style="max-width: 780px; margin-bottom: 2rem;">
+      <p class="narrative-lead">Prepared by <strong>Héctor Ibarzábal Rodríguez</strong> — seven years brokering office, industrial, and retail across Mexico, the U.S., and Canada. Watched capital leave conventional assets and chase experience. Now at Rice studying where it goes next.</p>
+      <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 12px;">See also: <a target="_blank" rel="noopener" href="https://experiential-re-mexico.vercel.app/" style="border-bottom: 1px solid rgba(200,149,108,0.25);">Geographic Market Intelligence — Experiential Real Estate in Mexico</a>, a companion dashboard scoring 20 markets for 3D-printed experiential development.</p>
+    </div>
+    <div class="shift-grid">
+      <div class="shift-card" style="border-top: 3px solid var(--accent);">
+        <div class="shift-direction" style="color: var(--accent);">BACKGROUND</div>
+        <h3>Commercial Brokerage</h3>
+        <p>Seven years brokering office, industrial, and retail across three countries. JLL, Marcus &amp; Millichap, Colliers.</p>
+      </div>
+      <div class="shift-card" style="border-top: 3px solid var(--accent);">
+        <div class="shift-direction" style="color: var(--accent);">OBSERVATION</div>
+        <h3>Capital Migration</h3>
+        <p>Watched capital systematically leave conventional assets and flow into experience.</p>
+      </div>
+      <div class="shift-card" style="border-top: 3px solid var(--accent);">
+        <div class="shift-direction" style="color: var(--accent);">THIS BRIEF</div>
+        <h3>The Convergence</h3>
+        <p>Maps where that capital is going and why ICON's technology sits at the exact center.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-2">
+    <div class="stat-grid cols-3">
+      <div class="stat-card">
+        <div class="stat-number">$584B</div>
+        <div class="stat-label">WELLNESS REAL ESTATE MARKET — 15.2% CAGR to $1.1T by 2029</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://globalwellnessinstitute.org/press-room/press-releases/build-well-to-live-well-2025/">Global Wellness Institute, 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$442B</div>
+        <div class="stat-label">IMMERSIVE ENTERTAINMENT BY 2030 — 26.3% CAGR</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.grandviewresearch.com/industry-analysis/immersive-entertainment-market-report">Grand View Research</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$11.1T</div>
+        <div class="stat-label">GLOBAL EXPERIENCE ECONOMY — 10% of world GDP</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://wttc.org/research/economic-impact">WTTC, 2024</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-3">
+    <div class="stat-grid cols-3">
+      <div class="stat-card">
+        <div class="stat-number">20.7%</div>
+        <div class="stat-label">US OFFICE VACANCY — Structural high, Q2 2025. Moody's projects 24% by 2026</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.moodyscre.com/insights/cre-trends/the-office-sectors-double-whammy/">Moody's Analytics</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4.1%</div>
+        <div class="stat-label">US RETAIL VACANCY — Lowest across all CRE sectors</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.cbre.com/insights/books/us-real-estate-market-outlook-2025/retail">CBRE, 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">30%</div>
+        <div class="stat-label">BRANDED RESIDENTIAL PREMIUM — Over unbranded, global average</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.knightfrank.com/research/article/2025-09-08-the-global-branded-residence-survey-2025">Knight Frank, 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-image reveal-delay-3">
+    <img src="https://images.unsplash.com/photo-1748145883131-9a31515082eb?w=1200&q=80&auto=format&fit=crop" alt="Geometric architectural facade — the convergence of precision construction and experiential design" loading="lazy">
+    <div class="image-caption">
+      <span>The convergence: architecture that performs commercially, built with precision that conventional construction can't match.</span>
+      <span>Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@hhm0331">Huiming Huang</a> / Unsplash</span>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-4">
+    <div class="callout">
+      ICON's Titan system produces organic, curvilinear architecture — domes, vaults, flowing walls — at no cost premium over straight lines. The markets paying the highest premiums for exactly this geometry represent the fastest-growing segments in global real estate. This is the convergence.
+    </div>
+  </div>
+</section>
+
+<section id="tab-02" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80&auto=format&fit=crop');">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <div class="section-label">02</div>
+      <h2 class="section-title">The Structural Shift</h2>
+      <div class="section-subtitle">From Compute to Gather</div>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+
+  <div class="container reveal-delay-1">
+    <div class="shift-grid">
+      <div class="shift-card shift-declining">
+        <div class="shift-direction">DECLINING</div>
+        <h3>Conventional Office</h3>
+        <p>20.7% vacancy — sixth consecutive quarterly record. The structural shift wasn't cyclical. It was categorical.</p>
+      </div>
+      <div class="shift-card shift-center">
+        <div class="shift-direction">CATALYST</div>
+        <h3>Digital Saturation</h3>
+        <p>7h 3m daily screen time. When AI moves work from desks to algorithms, people seek physical, immersive experiences.</p>
+      </div>
+      <div class="shift-card shift-rising">
+        <div class="shift-direction">RISING</div>
+        <h3>Experiential Real Estate</h3>
+        <p>4.1% retail vacancy — lowest across all CRE. The retail that's thriving isn't transactional. It's destination-driven.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-2">
+    <div class="stat-grid cols-3">
+      <div class="stat-card">
+        <div class="stat-number">20.7%</div>
+        <div class="stat-label">US OFFICE VACANCY RATE — Sixth consecutive quarterly record</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.moodyscre.com/insights/cre-trends/the-office-sectors-double-whammy/">Moody's Analytics, Q2 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">4.1%</div>
+        <div class="stat-label">US RETAIL VACANCY — Strongest CRE sector, record-low supply</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.cbre.com/insights/books/us-real-estate-market-outlook-2025/retail">CBRE, 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">7h 3m</div>
+        <div class="stat-label">DAILY US SCREEN TIME — Above global average of 6h 38m</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.demandsage.com/screen-time-statistics/">DemandSage, 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-3">
+    <div class="section-header">
+      <h3>The Brands Defining This Shift</h3>
+    </div>
+    <div class="stat-grid cols-2">
+      <div class="stat-card">
+        <div class="stat-label"><strong><a href="https://www.sohohouse.com/" target="_blank" rel="noopener">Soho House</a></strong></div>
+        <div class="narrative" style="font-size: 0.95rem;">~270,000 members across 46 houses in 19 countries. Taken private at 83% premium (Jan 2026) — proof that the membership-as-place model holds institutional value even after a turbulent public run.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label"><strong><a href="https://www.thesphere.com/" target="_blank" rel="noopener">The Sphere, Las Vegas</a></strong></div>
+        <div class="narrative" style="font-size: 0.95rem;">$2.3B investment. 17,600 seats. Highest-grossing venue globally. Now planning Abu Dhabi and London expansions — the returns justified the thesis that architecture IS the product.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label"><strong><a href="https://www.thermegroup.com/" target="_blank" rel="noopener">Therme Group</a></strong></div>
+        <div class="narrative" style="font-size: 0.95rem;">€320M financing from Macquarie. 10 planned US projects, ~500K SF each. The bet: wellness at destination scale, anchored by distinctive architecture that conventional construction can't easily replicate.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label"><strong><a href="https://meowwolf.com/" target="_blank" rel="noopener">Meow Wolf</a></strong></div>
+        <div class="narrative" style="font-size: 0.95rem;">5 immersive locations. ~$150M estimated revenue. $192M in funding. The space itself is the IP — visitors pay to be inside a surreal architectural experience, not to see a show.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label"><strong><a href="https://www.teamlab.art/" target="_blank" rel="noopener">TeamLab</a></strong></div>
+        <div class="narrative" style="font-size: 0.95rem;">60 locations globally. 2.5M annual visitors at Tokyo flagship alone. Jeddah permanent museum opened 2024. Digital art fused to physical architecture — the building becomes the canvas.</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label"><strong><a href="https://www.eprkc.com/" target="_blank" rel="noopener">EPR Properties</a></strong></div>
+        <div class="narrative" style="font-size: 0.95rem;">NYSE: EPR. $7.0B portfolio, 353 properties, 94% experiential focus. The institutional proof: a publicly traded REIT built entirely on the thesis that experience-driven real estate outperforms.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-image reveal-delay-4">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Sphere-exosphere-on-Jan-26-2024.jpg/960px-Sphere-exosphere-on-Jan-26-2024.jpg" alt="The Sphere, Las Vegas — $2.3B architecture-as-product venue" loading="lazy">
+    <div class="image-caption">
+      <span>The Sphere, Las Vegas — $2.3B. Architecture IS the product.</span>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-4">
+    <div class="section-header">
+      <h3>The White Lotus Effect</h3>
+    </div>
+    <div class="narrative">
+      <p class="narrative-lead">When HBO's <a target="_blank" rel="noopener" href="https://www.hbo.com/the-white-lotus"><em>The White Lotus</em></a> premiered, the Four Seasons Maui saw a 425% booking spike that held for six months. San Domenico Palace in Sicily sold out a season in advance. After Season 3, demand for luxury resorts in Thailand surged over 300%. A television show didn't just drive tourism — it proved that architecture and setting are now the product. The building is the brand.</p>
+      <p>This is the pattern repeating everywhere. Netflix is building permanent <a target="_blank" rel="noopener" href="https://www.netflixhouse.com/dallas">Netflix House</a> venues in Dallas, Philadelphia, and Las Vegas. Disney's Parks & Experiences division posted a record <a target="_blank" rel="noopener" href="https://thewaltdisneycompany.com/press-releases/the-walt-disney-company-reports-fourth-quarter-and-full-year-earnings-for-fiscal-2025/">$10B in operating income</a> in FY2025 — experiential real estate at theme-park scale. Music artists, creators, and festival operators are all seeking physical spaces that embody their IP. The demand for architecturally distinctive venues isn't emerging. It's here, and it's institutional-scale.</p>
+    </div>
+  </div>
+
+  <div class="content-image reveal-delay-4">
+    <img src="https://images.unsplash.com/photo-1668404521060-1b28e8e435b8?w=1200&q=80&auto=format&fit=crop" alt="Four Seasons Maui — The White Lotus filming location, 425% booking spike" loading="lazy">
+    <div class="image-caption">
+      <span>Four Seasons Maui — filming location for <em>The White Lotus</em> S1. 425% booking spike. Architecture is the product.</span>
+      <span>Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@bullterriere">Simon Hurry</a> / Unsplash</span>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-4">
+    <div class="callout callout-featured" style="margin-top: 2.5rem; border-left: 4px solid var(--accent); background: linear-gradient(135deg, rgba(200,149,108,0.08) 0%, var(--card) 100%);">
+      <h3 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text-bright); margin-bottom: 16px; letter-spacing: -0.5px;">Scale Becomes Discretionary.</h3>
+      <p style="font-size: 1.05rem; line-height: 1.65; margin: 0; color: var(--text);">Historically, monetizing IP through physical space required a <strong style="color: var(--text-bright);">$2.3B Sphere</strong> or a <strong style="color: var(--text-bright);">$5B theme park</strong>. ICON's technology changes the calculus entirely. When organic, sculptural architecture costs the same as a rectangle, a boutique operator can deploy an architecturally distinctive wellness compound or a branded experiential venue — without theme-park economics.</p>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-5">
+    <div class="callout">
+      Flight to quality: not Class B → Class A. It's conventional → experiential. The architecture that defines experiential is exactly what ICON produces — at no premium.
+    </div>
+  </div>
+</section>
+
+<section id="tab-03" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1600&q=80&auto=format&fit=crop');">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <div class="section-label">03</div>
+      <h2 class="section-title">The Geometry Premium</h2>
+      <div class="section-subtitle">Why Curves Command Capital</div>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+
+  <div class="container reveal-delay-1">
+    <div class="narrative">
+      <p class="narrative-lead">Neuroarchitecture research confirms it: curved spaces measurably reduce stress, improve cognition, and drive aesthetic preference. The implications for experiential real estate economics are direct.</p>
+    </div>
+
+    <div class="content-image" style="margin-top: 32px;">
+      <img src="https://images.unsplash.com/photo-1774560825688-b4a3d2eabb82?w=1200&q=80&auto=format&fit=crop" alt="Curvilinear architecture — organic rounded window facade demonstrating the geometry premium" loading="lazy">
+      <div class="image-caption">The geometry premium in practice: organic curved forms that conventional construction prices out of reach — and 3D printing makes cost-neutral. <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@charlespuaud">Charles Puaud</a> / Unsplash</span></div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-2">
+    <div class="stat-grid cols-3">
+      <div class="stat-card">
+        <div class="stat-number">Stress Reduction</div>
+        <div class="stat-label"><strong>CURVILINEAR SPACES</strong> — Curved forms reduce physiological stress markers vs. rectilinear environments</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2023.1237531/full">Frontiers in Computer Science, 2023</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Cognitive Improvement</div>
+        <div class="stat-label"><strong>BIOPHILIC DESIGN</strong> — Cognitive performance improved across all biophilic conditions vs. baseline</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41598-024-83791-9">Nature Scientific Reports, 2024</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Aesthetic Preference</div>
+        <div class="stat-label"><strong>GEOMETRIC PSYCHOLOGY</strong> — Rounded forms rated significantly more pleasant, linked to reward-center activation</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11048496/">PMC/NIH, 2024</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-3">
+    <div class="cost-comparison">
+      <div class="cost-item cost-conventional">
+        <div class="cost-label">CONVENTIONAL CURVES</div>
+        <div class="cost-bar" style="width: 85%;"></div>
+        <div class="cost-detail">+35–60% structural cost. Formwork = 40–60% of total budget. A century of rectangles.</div>
+      </div>
+      <div class="cost-item cost-icon">
+        <div class="cost-label">ICON 3D-PRINTED CURVES</div>
+        <div class="cost-bar" style="width: 15%;"></div>
+        <div class="cost-detail">~$0 premium. Dome = Box. Flowing wall = Straight wall. Geometry is software.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-4">
+    <div class="stat-grid cols-2">
+      <div class="stat-card">
+        <div class="stat-number">$500M+</div>
+        <div class="stat-label">CAPITAL RAISED BY ICON — Including $56M Series C (Feb 2025), ~$2B valuation</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://tracxn.com/d/companies/icon/__Bgn3aXPHPI8T_p1_Xvll55odpTyo9D_pIlDDVWMjTz0">Tracxn</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">BIG</div>
+        <div class="stat-label">BJARKE INGELS GROUP — Design partner & strategic investor in ICON</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://big.dk/">big.dk</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-5">
+    <div class="callout">
+      A door that has never existed: the most psychologically beneficial and commercially valuable architectural forms are now also the most cost-efficient to build.
+    </div>
+  </div>
+
+  <div class="container reveal-delay-6">
+    <div class="section-header">
+      <h3>The Capital Behind the Technology</h3>
+    </div>
+    <div class="narrative">
+      <p>Over $500M in institutional capital — including a $56M Series C in February 2025 — from partners who see the same inflection point.</p>
+    </div>
+    <div class="investor-grid">
+      <div class="investor-card">
+        <div class="investor-name">Norwest Venture Partners</div>
+        <div class="investor-type">Lead Investor, Series B ($207M) · <a target="_blank" rel="noopener" href="https://www.nvp.com/">nvp.com</a></div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">Tiger Global</div>
+        <div class="investor-type">Growth Equity · Series B Extension ($185M)</div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">8VC</div>
+        <div class="investor-type">Deep Tech Venture Capital · <a target="_blank" rel="noopener" href="https://8vc.com/">8vc.com</a></div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">Fifth Wall</div>
+        <div class="investor-type">PropTech Venture Capital · <a target="_blank" rel="noopener" href="https://fifthwall.com/">fifthwall.com</a></div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">BIG (Bjarke Ingels Group)</div>
+        <div class="investor-type">Design Partner & Strategic Investor · <a target="_blank" rel="noopener" href="https://big.dk/">big.dk</a></div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">Citi</div>
+        <div class="investor-type">Strategic Investment</div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">Moderne Ventures</div>
+        <div class="investor-type">PropTech VC</div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">Vulcan Capital</div>
+        <div class="investor-type">Technology Investment</div>
+      </div>
+      <div class="investor-card">
+        <div class="investor-name">BOND</div>
+        <div class="investor-type">Technology VC</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-6" style="margin-top: 48px;">
+    <div class="section-header">
+      <h3>Anchor Projects — Technology Already Deployed</h3>
+    </div>
+    <div class="narrative">
+      <p>ICON's technology isn't theoretical. These are built, occupied, and in-market.</p>
+    </div>
+  </div>
+
+  <div class="content-image reveal-delay-6">
+    <img src="https://images.adsttc.com/media/images/64ba/4e95/edf1/692c/d87f/28ff/large_jpg/big-icon-and-lennar-complete-the-first-3d-printed-model-house-at-the-wolf-ranch-community-in-austin-texas_1.jpg?1689931427" alt="Wolf Ranch — BIG + ICON + Lennar 3D-printed community, Georgetown TX" loading="lazy">
+    <div class="image-caption">
+      <span>Wolf Ranch, Georgetown TX — Largest 3D-printed neighborhood in the world. BIG + ICON + Lennar.</span>
+      <span>Photo: <a target="_blank" rel="noopener" href="https://www.archdaily.com/1004384/big-icon-and-lennar-complete-the-first-3d-printed-model-house-at-the-wolf-ranch-community-in-austin-texas">ArchDaily</a></span>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-6">
+    <div class="stat-grid cols-3">
+      <div class="stat-card">
+        <div class="stat-number" style="font-size: 1.3rem;">Wolf Ranch</div>
+        <div class="stat-label">100-HOME COMMUNITY — Georgetown, TX. BIG-designed. Largest 3D-printed neighborhood in the world. First move-ins 2025.</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.archdaily.com/1004384/big-icon-and-lennar-complete-the-first-3d-printed-model-house-at-the-wolf-ranch-community-in-austin-texas">ArchDaily</a> · ICON + Lennar + BIG <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="font-size: 1.3rem;">El Cosmico</div>
+        <div class="stat-label">WORLD'S FIRST 3D-PRINTED HOTEL — Marfa, TX. 60+ acres. BIG-designed Sunday Homes. Liz Lambert. Opening 2027.</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.iconbuild.com/projects/el-cosmico">ICON</a> · <a target="_blank" rel="noopener" href="https://newatlas.com/architecture/icon-el-cosmico-construction/">New Atlas</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="font-size: 1.3rem;">Community First! Village</div>
+        <div class="stat-label">SOCIAL IMPACT — Austin, TX. 3D-printed permanent housing for chronically homeless. Proof of speed and cost efficiency.</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.iconbuild.com/projects/community-first-village">ICON</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  <div class="content-image" style="margin-top: 24px;">
+    <img src="https://newatlas-brightspot.s3.amazonaws.com/55/dd/e2fdbc7f495b86024bde6532002f/el-cosmico-3d-printed-hotel-exterior-marfatx-concept-render.jpg" alt="El Cosmico — World's first 3D-printed hotel, Marfa TX" loading="lazy">
+    <div class="image-caption">
+      <span>El Cosmico, Marfa TX — World's first 3D-printed hotel. BIG-designed Sunday Homes. Opening 2027.</span>
+      <span>Photo: <a target="_blank" rel="noopener" href="https://newatlas.com/architecture/icon-el-cosmico-construction/">New Atlas</a></span>
+    </div>
+  </div>
+
+    <div class="stat-grid cols-2" style="margin-top: 16px;">
+      <div class="stat-card">
+        <div class="stat-number" style="font-size: 1.3rem;">House Zero</div>
+        <div class="stat-label">PROOF OF CONCEPT — Austin, TX. First permitted 3D-printed home in the US. Completed 2022.</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.iconbuild.com/projects/house-zero">ICON</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" style="font-size: 1.3rem;">Titan Program</div>
+        <div class="stat-label">COMMERCIALIZATION — Launched March 2026. First time ICON offers its full system to external builders. Deliveries early 2027.</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://3dprintingindustry.com/news/icon-launches-titan-program-to-commercialize-robotic-3d-printing-construction-system-for-builders-249907/">3D Printing Industry</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<section id="tab-04" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=1600&q=80&auto=format&fit=crop');">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <div class="section-label">04</div>
+      <h2 class="section-title">The Market Canvas</h2>
+      <div class="section-subtitle">Where 3D-printed construction has zero penetration</div>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+
+  <div class="container reveal-delay-1">
+    <div class="narrative">
+      <p class="narrative-lead">The technology works and the capital is in place. Now the question becomes: how large is the opportunity? Over $1.2 trillion in addressable market value. Double-digit growth rates. Architecture premiums for exactly what ICON produces. Zero 3D-printed penetration in any of them.</p>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-2">
+    <div class="stat-grid cols-3">
+      <div class="stat-card">
+        <div class="stat-number">$584B</div>
+        <div class="stat-label">WELLNESS REAL ESTATE — Growing 15.2% annually to $1.1T by 2029</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://globalwellnessinstitute.org/press-room/press-releases/build-well-to-live-well-2025/">GWI, 2025</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$442B</div>
+        <div class="stat-label">IMMERSIVE ENTERTAINMENT — Projected by 2030, 26.3% CAGR</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://www.grandviewresearch.com/industry-analysis/immersive-entertainment-market-report">Grand View Research</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$114.6B</div>
+        <div class="stat-label">EXPERIENTIAL RETAIL — Growing 14% CAGR through 2032</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://univdatos.com/reports/experiential-retail-market">UnivDatos</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-3">
+    <div class="stat-grid cols-2">
+      <div class="stat-card">
+        <div class="stat-number">$25.9B</div>
+        <div class="stat-label">LOCATION-BASED ENTERTAINMENT — Projected by 2030, 28.5% CAGR</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://straitsresearch.com/report/location-based-entertainment-market">Straits Research</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">$11.1T</div>
+        <div class="stat-label">TOTAL EXPERIENCE ECONOMY — 10% of global GDP, 357M jobs</div>
+        <div class="stat-source"><a target="_blank" rel="noopener" href="https://wttc.org/research/economic-impact">WTTC, 2024</a> <span class="badge sourced">SOURCED</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-4">
+    <div class="convergence-visual">
+      <span class="convergence-tag">Wellness Resort</span>
+      <span class="convergence-connector">+</span>
+      <span class="convergence-tag">Experiential Hospitality</span>
+      <span class="convergence-connector">+</span>
+      <span class="convergence-tag">Immersive Entertainment</span>
+      <span class="convergence-connector">+</span>
+      <span class="convergence-tag">Branded Residential</span>
+      <span class="convergence-connector">=</span>
+      <span class="convergence-tag convergence-result">Same architecture. Organic, sculptural, distinctive. ICON builds all of it.</span>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-5">
+    <div class="market-chart">
+      <div class="market-chart-title">Converging Market Opportunity — Addressable Sectors</div>
+      <div class="chart-bar-row">
+        <div class="chart-bar-label">Wellness Real Estate</div>
+        <div class="chart-bar-track"><div class="chart-bar-fill" data-width="100%"></div></div>
+        <div class="chart-bar-value">$584B</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-bar-label">Immersive Entertainment</div>
+        <div class="chart-bar-track"><div class="chart-bar-fill" data-width="76%"></div></div>
+        <div class="chart-bar-value">$442B</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-bar-label">Experiential Retail</div>
+        <div class="chart-bar-track"><div class="chart-bar-fill" data-width="20%"></div></div>
+        <div class="chart-bar-value">$114.6B</div>
+      </div>
+      <div class="chart-bar-row">
+        <div class="chart-bar-label">Location-Based Ent.</div>
+        <div class="chart-bar-track"><div class="chart-bar-fill" data-width="4.4%"></div></div>
+        <div class="chart-bar-value">$25.9B</div>
+      </div>
+      <div class="chart-total-row">
+        <div class="chart-total-label">Combined TAM</div>
+        <div class="chart-total-bar"><div class="chart-total-fill" data-width="100%"></div></div>
+        <div class="chart-total-value">$1.17T</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-5">
+    <div class="section-header">
+      <h3>Zero Penetration Across Fast-Growing Segments</h3>
+    </div>
+    <div class="data-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Sector</th>
+            <th>Market Size</th>
+            <th>CAGR</th>
+            <th>3D-Printed Projects</th>
+            <th>Architectural Demand</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Wellness Real Estate</td>
+            <td>$584B</td>
+            <td>15.2%</td>
+            <td>0</td>
+            <td>Biophilic, organic, nature-integrated</td>
+          </tr>
+          <tr>
+            <td>Immersive Entertainment</td>
+            <td>$442B by 2030</td>
+            <td>26.3%</td>
+            <td>0</td>
+            <td>Sculptural, otherworldly, experiential</td>
+          </tr>
+          <tr>
+            <td>Experiential Retail</td>
+            <td>$114.6B</td>
+            <td>14.0%</td>
+            <td>0</td>
+            <td>Distinctive, Instagram-worthy, destination</td>
+          </tr>
+          <tr>
+            <td>Location-Based Entertainment</td>
+            <td>$25.9B by 2030</td>
+            <td>28.5%</td>
+            <td>0</td>
+            <td>Immersive, theatrical, non-rectangular</td>
+          </tr>
+          <tr>
+            <td>Branded Residential</td>
+            <td>30% premium</td>
+            <td>Growing</td>
+            <td>0</td>
+            <td>Iconic, signature, architect-driven</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="font-size: 0.9rem; color: #666; margin-top: 1rem; font-style: italic;">Market sizes from respective research firms. 3D-printed project count based on public records as of March 2026.</div>
+  </div>
+
+  <div class="container reveal-delay-6" style="margin-top: 48px;">
+    <div class="section-header">
+      <h3>The BIG + Shakira Signal</h3>
+    </div>
+    <div class="narrative">
+      <p class="narrative-lead">In March 2026, Bjarke Ingels Group unveiled the <strong>Estadio Shakira at Macondo Park</strong> — a 50,000-capacity temporary stadium in Madrid designed for a nine-night concert residency. The structure spans 4 hectares, assembles and disassembles in weeks, and hosts 12-hour immersive cultural experiences blending music, exhibitions, gastronomy, and curated Latin American programming.</p>
+    </div>
+  </div>
+
+  <div class="content-image">
+    <img src="https://parametric-architecture.com/wp-content/uploads/2026/03/BIG-to-Design-Shakira-Stadium-at-Macondo-Park-in-Madrid-02.webp" alt="Estadio Shakira at Macondo Park — BIG aerial render, Madrid" loading="lazy">
+    <div class="image-caption">
+      <span>Estadio Shakira at Macondo Park, Madrid — BIG. 50,000-capacity, 4 hectares, nine-night residency.</span>
+      <span class="image-credit">Image: <a target="_blank" rel="noopener" href="https://parametric-architecture.com/big-shakira-stadium-in-madrid/">Parametric Architecture</a> · © BIG</span>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top: 0;">
+    <div class="narrative">
+      <p>This is ICON's design partner building exactly what ICON's technology enables: <strong>temporary, sculptural, experiential architecture deployed at speed</strong>. The Shakira Stadium is conventional construction — erected and torn down in weeks at enormous cost. With 3D-printed construction, a structure like this could be permanent, incrementally expanded, and redeployed — at a fraction of the formwork expense.</p>
+    </div>
+    <div class="callout">
+      The gradual development thesis: instead of a $2.3B Sphere or a $5B theme park, ICON enables operators to deploy architecturally distinctive structures at discretionary scale — a wellness pavilion, a branded entertainment shell, a pop-up resort — and expand only as demand proves out. BIG is already designing for this future. ICON builds it.
+    </div>
+    <div class="stat-source stat-source-wide" style="max-width: 1200px; margin: 12px auto 0; font-size: 0.7rem; color: var(--text-dim);">
+      <a target="_blank" rel="noopener" href="https://parametric-architecture.com/big-shakira-stadium-in-madrid/">Parametric Architecture</a> · <a target="_blank" rel="noopener" href="https://news.pollstar.com/2026/03/20/shakira-to-perform-3-night-residency-in-madrid-at-purpose-built-stadium/">Pollstar</a> · <a target="_blank" rel="noopener" href="https://www.iqmagazine.com/2026/03/shakira-announces-madrid-residency-in-bespoke-stadium/">IQ Magazine</a> <span class="badge sourced">SOURCED</span>
+    </div>
+  </div>
+
+  <div class="content-image" style="margin-top: 32px;">
+    <img src="https://parametric-architecture.com/wp-content/uploads/2026/03/BIG-to-Design-Shakira-Stadium-at-Macondo-Park-in-Madrid-03.webp" alt="Estadio Shakira — BIG night render with fireworks, Macondo Park Madrid" loading="lazy">
+    <div class="image-caption">
+      <span>Macondo Park night render — immersive cultural experiences blending music, exhibitions, and gastronomy.</span>
+      <span class="image-credit">Image: <a target="_blank" rel="noopener" href="https://parametric-architecture.com/big-shakira-stadium-in-madrid/">Parametric Architecture</a> · © BIG</span>
+    </div>
+  </div>
+
+  <div class="container reveal-delay-7">
+    <div class="callout">
+      The question is not whether these markets want organic, sculptural architecture. They demonstrably do — and pay premium prices for it. The question is who connects ICON's technology to the operators building in these spaces.
+    </div>
+  </div>
+</section>
+
+
+<section id="tab-05" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1540541338287-41700207dee6?w=1600&q=80&auto=format&fit=crop');">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <span class="section-label">05</span>
+      <h2 class="section-title">The Buyer Landscape</h2>
+      <p class="section-subtitle">Sectors and operators building the experience economy</p>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+  <div class="container">
+
+    <div class="narrative">
+      <p class="narrative-lead">The previous section mapped $1.2T+ in addressable markets with zero 3D-printed penetration. Here are the operators already building in those spaces — from ultra-luxury hospitality to TikTok-native pop-ups, from wellness mega-destinations to safari lodges in sensitive biomes. Nine sectors, dozens of operators, one common thread: they all need architecturally distinctive structures that conventional construction makes prohibitively expensive or logistically impractical. ICON eliminates both constraints.</p>
+    </div>
+
+    <div class="content-image" style="margin-bottom: 32px;">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1200&q=80&auto=format&fit=crop" alt="Modern luxury resort with distinctive architecture — the buyer landscape for experiential real estate" loading="lazy">
+      <div class="image-caption">
+        <span>The buyer landscape in practice: luxury operators competing on architecture, not just amenities. Every sector below demands the distinctive, organic forms that ICON delivers at conventional cost.</span>
+        <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@rpnickson">Roberto Nickson</a> / Unsplash</span>
+      </div>
+    </div>
+
+    <div class="sector-card reveal">
+      <div class="sector-header">
+        <h3 class="sector-title">Experiential Hospitality</h3>
+        <p class="sector-meta">Operators redefining hospitality as membership, wellness, and community</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Premium ADRs driven by architecture as competitive moat. The hotel is the destination.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.sohohouse.com/" class="brand-pill"><strong>Soho House</strong> · ~270K members, 46 houses, 19 countries</a>
+          <a target="_blank" rel="noopener" href="https://www.aman.com/" class="brand-pill"><strong>Aman</strong> · 34 hotels, ultra-luxury wellness positioning</a>
+          <a target="_blank" rel="noopener" href="https://www.sixsenses.com/" class="brand-pill"><strong>Six Senses</strong> · 24 resorts, wellness-integrated hospitality</a>
+          <a target="_blank" rel="noopener" href="https://equinox-hotels.com/" class="brand-pill"><strong>Equinox Hotels</strong> · Fitness-luxury crossover</a>
+          <a target="_blank" rel="noopener" href="https://www.1hotels.com/" class="brand-pill"><strong>1 Hotel</strong> · Nature-driven luxury</a>
+          <a target="_blank" rel="noopener" href="https://www.nobuhotels.com/" class="brand-pill"><strong>Nobu Hospitality</strong> · Celebrity-branded lifestyle</a>
+          <a target="_blank" rel="noopener" href="https://www.baniyangroup.com/" class="brand-pill"><strong>Banyan Tree</strong> · 60+ properties, wellness DNA</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-1">
+      <div class="sector-header">
+        <h3 class="sector-title">Immersive Entertainment</h3>
+        <p class="sector-meta">Venues where architecture IS the product</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Architecture inseparable from experience. Buildings conventional construction can't efficiently produce.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://meowwolf.com/" class="brand-pill"><strong>Meow Wolf</strong> · 5 locations, ~$150M revenue, $192M funded</a>
+          <a target="_blank" rel="noopener" href="https://www.teamlab.art/" class="brand-pill"><strong>TeamLab</strong> · 60 locations, 2.5M visitors/yr (Tokyo)</a>
+          <a target="_blank" rel="noopener" href="https://www.thesphere.com/" class="brand-pill"><strong>Sphere Entertainment</strong> · $2.3B Las Vegas, Abu Dhabi franchise</a>
+          <a target="_blank" rel="noopener" href="https://www.punchdrunk.com/" class="brand-pill"><strong>Punchdrunk</strong> · Sleep No More, immersive theater</a>
+          <a target="_blank" rel="noopener" href="https://area15.com/" class="brand-pill"><strong>Area15</strong> · Las Vegas experiential district</a>
+          <a target="_blank" rel="noopener" href="https://www.illuminarium.com/" class="brand-pill"><strong>Illuminarium</strong> · Immersive experience venues</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-2">
+      <div class="sector-header">
+        <h3 class="sector-title">Wellness Destinations</h3>
+        <p class="sector-meta">Large-format wellness infrastructure at destination scale</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>$584B market producing large-format destinations. Thermal bathing, fitness, medical wellness — all requiring biophilic, organic architecture.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.thermegroup.com/" class="brand-pill"><strong>Therme Group</strong> · €320M financing, 10 US projects planned, ~500K SF each</a>
+          <a target="_blank" rel="noopener" href="https://shawellnessclinic.com/" class="brand-pill"><strong>SHA Wellness Clinic</strong> · Medical wellness, Spain + UAE</a>
+          <a target="_blank" rel="noopener" href="https://www.canyonranch.com/" class="brand-pill"><strong>Canyon Ranch</strong> · Pioneer wellness resort brand</a>
+          <a target="_blank" rel="noopener" href="https://www.lanserhof.com/en" class="brand-pill"><strong>Lanserhof</strong> · European medical wellness</a>
+          <a target="_blank" rel="noopener" href="https://www.cliniquelaprairie.com/" class="brand-pill"><strong>Clinique La Prairie</strong> · Swiss longevity wellness</a>
+          <a target="_blank" rel="noopener" href="https://www.bathhouse.com/" class="brand-pill"><strong>Bathhouse</strong> · Urban bathhouse concept, Williamsburg + Nashville</a>
+          <a target="_blank" rel="noopener" href="https://www.othership.us/" class="brand-pill"><strong>Othership</strong> · Social bathhouse, breathwork-integrated</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-3">
+      <div class="sector-header">
+        <h3 class="sector-title">Outdoor Hospitality & Luxury Glamping</h3>
+        <p class="sector-meta">Architecturally distinctive structures in nature — ICON's most natural near-term market</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Operators deploying unique cabins, domes, and shelters in landscape settings. Organic forms that feel grown from the earth — exactly what ICON prints, at the per-unit price point these operators already spend.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.ourhabitas.com/" class="brand-pill"><strong>Habitas</strong> · Modular luxury camps, 15+ locations, $100M+ raised. Already builds temporary/modular — ICON makes it permanent</a>
+          <a target="_blank" rel="noopener" href="https://autocamp.com/" class="brand-pill"><strong>AutoCamp</strong> · Luxury outdoor hospitality, Yosemite, Zion, Cape Cod. Architecture as destination</a>
+          <a target="_blank" rel="noopener" href="https://www.undercanvas.com/" class="brand-pill"><strong>Under Canvas</strong> · Safari-style glamping near national parks, 9+ locations</a>
+          <a target="_blank" rel="noopener" href="https://getaway.house/" class="brand-pill"><strong>Getaway</strong> · Tiny cabin escapes, 20+ outposts. Scalable unit model</a>
+          <a target="_blank" rel="noopener" href="https://www.collectiveretreats.com/" class="brand-pill"><strong>Collective Retreats</strong> · Luxury outdoor lodging on underutilized land</a>
+          <a target="_blank" rel="noopener" href="https://www.tenthousandwaves.com/" class="brand-pill"><strong>Ten Thousand Waves</strong> · Japanese-inspired spa resort, Santa Fe — sculptural bathing architecture</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-4">
+      <div class="sector-header">
+        <h3 class="sector-title">Sports & Entertainment Districts</h3>
+        <p class="sector-meta">Mixed-use districts where amenity structures drive the premium</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Arena-anchored mixed-use developments where surrounding retail pavilions, food halls, and public gathering spaces generate outsized returns. Battery Atlanta proved the model — $97M mixed-use revenue on a $69M OIBDA. ICON targets the amenity layer.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.cordish.com/" class="brand-pill"><strong>Cordish Companies</strong> · Live! Districts — Baltimore, Arlington, St. Louis, Philadelphia. Entertainment-anchored mixed-use</a>
+          <a target="_blank" rel="noopener" href="https://www.related.com/" class="brand-pill"><strong>Related Companies</strong> · Hudson Yards, The Grand LA. Experiential placemaking at scale</a>
+          <a target="_blank" rel="noopener" href="https://oakviewgroup.com/" class="brand-pill"><strong>Oak View Group</strong> · Climate Pledge Arena, UBS Arena. New-build arena + district developer</a>
+          <a target="_blank" rel="noopener" href="https://sterlingbay.com/" class="brand-pill"><strong>Sterling Bay</strong> · Lincoln Yards, Chicago. $6B mixed-use entertainment district</a>
+          <a target="_blank" rel="noopener" href="https://www.formula1.com/" class="brand-pill"><strong>Formula 1</strong> · Paddock/hospitality infrastructure at expanding circuit calendar. Temporary → permanent structures</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-5">
+      <div class="sector-header">
+        <h3 class="sector-title">DTC & Digital-Native Retail</h3>
+        <p class="sector-meta">A $95B pop-up market where digitally native brands need physical spaces that match their identity</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>The pop-up retail market hit $95B in 2025, growing at 22% CAGR. Thousands of digitally native brands are moving into physical space — but they don't need a 50,000 SF lease. They need a sculptural 2,000 SF pavilion that photographs well, assembles fast, and feels on-brand. Strawberry Milk Mob turned a TikTok following into sold-out immersive pop-ups in NYC and Vancouver. The demand is there. What's missing is the architecture.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.averagesocialite.com/nyc-events/2026/3/21/strawberry-milk-mob-diner-nyc" class="brand-pill"><strong>Strawberry Milk Mob</strong> · TikTok-viral swimwear brand turning pop-ups into immersive retail — NYC Diner activation, Mar 2026</a>
+          <a target="_blank" rel="noopener" href="https://www.thestorefront.com/" class="brand-pill"><strong>Storefront</strong> · Pop-up marketplace — connects brands with temporary retail spaces in 10,000+ locations</a>
+          <a target="_blank" rel="noopener" href="https://www.appearhere.com/" class="brand-pill"><strong>Appear Here</strong> · Short-term retail leasing platform — London, Paris, NYC. "The Airbnb of retail"</a>
+          <a target="_blank" rel="noopener" href="https://www.glossier.com/" class="brand-pill"><strong>Glossier</strong> · DTC beauty → permanent flagships. Architecture IS the brand story</a>
+          <a target="_blank" rel="noopener" href="https://www.warbyparker.com/" class="brand-pill"><strong>Warby Parker</strong> · 270+ stores. Online-first → physical retail as growth engine</a>
+          <a target="_blank" rel="noopener" href="https://skims.com/" class="brand-pill"><strong>Skims</strong> · Celebrity DTC brand expanding into experiential pop-ups and permanent retail</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-7">
+      <div class="sector-header">
+        <h3 class="sector-title">Eco-Luxury Lodges</h3>
+        <p class="sector-meta">Remote, architecturally distinctive lodges in environmentally sensitive sites</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Luxury safari and eco-lodge operators where organic architecture, minimal site disruption, and reduced material waste aren't just aesthetic — they're operational requirements. 3D printing's smaller construction footprint is a selling point beyond geometry.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://singita.com/" class="brand-pill"><strong>Singita</strong> · 15 lodges across Africa, ultra-luxury conservation tourism. Architecture defines the brand</a>
+          <a target="_blank" rel="noopener" href="https://www.andbeyond.com/" class="brand-pill"><strong>&Beyond</strong> · 29 lodges, Africa + South America. Sustainable luxury in sensitive biomes</a>
+          <a target="_blank" rel="noopener" href="https://www.wildernessdestinations.com/" class="brand-pill"><strong>Wilderness</strong> · 50+ camps across 8 African countries. Low-footprint, high-design</a>
+          <a target="_blank" rel="noopener" href="https://www.sixsenses.com/" class="brand-pill"><strong>Six Senses</strong> · Resort pipeline in remote destinations — architecture must harmonize with landscape</a>
+          <a target="_blank" rel="noopener" href="https://www.explora.com/" class="brand-pill"><strong>Explora</strong> · Patagonia, Atacama, Easter Island. Expedition lodges in extreme geographies</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-8">
+      <div class="sector-header">
+        <h3 class="sector-title">Destination Dining & Food Halls</h3>
+        <p class="sector-meta">Architecture-driven culinary experiences at mid-scale</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Food halls and destination restaurants where the space is as much the draw as the menu. Mid-scale structures — not a $2B Sphere, not a single home — which is ICON's sweet spot for near-term deployment.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.timeoutmarket.com/" class="brand-pill"><strong>Time Out Market</strong> · 8 cities. Curated food hall as cultural destination</a>
+          <a target="_blank" rel="noopener" href="https://www.eataly.com/" class="brand-pill"><strong>Eataly</strong> · 45+ locations globally. Italian food + retail + experience</a>
+          <a target="_blank" rel="noopener" href="https://www.noburestaurants.com/" class="brand-pill"><strong>Nobu</strong> · 50+ restaurants. Celebrity-branded destination dining expanding into standalone structures</a>
+          <a target="_blank" rel="noopener" href="https://www.cirquedusoleil.com/" class="brand-pill"><strong>Cirque du Soleil</strong> · Permanent + touring venues. Sculptural performance spaces</a>
+          <a target="_blank" rel="noopener" href="https://www.merlinentertainments.biz/" class="brand-pill"><strong>Merlin Entertainments</strong> · Madame Tussauds, Legoland, SEA LIFE — 140+ attractions in 24 countries</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-9">
+      <div class="sector-header">
+        <h3 class="sector-title">IP-to-Physical Venues</h3>
+        <p class="sector-meta">Digital IP monetized through distinctive physical spaces</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>Digital IP seeking physical form. Hundreds of billions in IP libraries, increasingly monetized through built spaces. ICON makes it viable at discretionary scale.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.netflixhouse.com/dallas" class="brand-pill"><strong>Netflix House</strong> · Dallas + Philadelphia (2025), Las Vegas (2027) — permanent IP-driven venues</a>
+          <a target="_blank" rel="noopener" href="https://thewaltdisneycompany.com/press-releases/the-walt-disney-company-reports-fourth-quarter-and-full-year-earnings-for-fiscal-2025/" class="brand-pill"><strong>Disney Parks & Experiences</strong> · Record $10B operating income (FY2025), experiential real estate at theme-park scale</a>
+          <a target="_blank" rel="noopener" href="https://www.universaldestinations.com/" class="brand-pill"><strong>Universal Studios</strong> · $8.6B revenue, Epic Universe launching</a>
+          <a target="_blank" rel="noopener" href="https://www.livenationentertainment.com/" class="brand-pill"><strong>Live Nation / Festival Operators</strong> · Coachella, Tomorrowland, Art Basel — demand for permanent infrastructure</a>
+          <a target="_blank" rel="noopener" href="https://www.merlinentertainments.biz/" class="brand-pill"><strong>Merlin Entertainments</strong> · Madame Tussauds, Legoland, SEA LIFE — 140+ attractions, 24 countries</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sector-card reveal reveal-delay-10">
+      <div class="sector-header">
+        <h3 class="sector-title">Sculptural Residential</h3>
+        <p class="sector-meta">Branded and architecturally distinctive residential commanding 30%+ premiums</p>
+        <button class="sector-toggle" aria-expanded="false">+</button>
+      </div>
+      <div class="sector-body">
+        <p>30% global premium, up to 90% in Dubai. Driven by architectural distinction. ICON produces signature forms at conventional cost.</p>
+        <div class="brand-grid">
+          <a target="_blank" rel="noopener" href="https://www.aman.com/residences" class="brand-pill"><strong>Aman Residences</strong> · Ultra-luxury, architectural identity</a>
+          <a target="_blank" rel="noopener" href="https://www.fourseasons.com/residences/" class="brand-pill"><strong>Four Seasons Private Residences</strong> · Global branded residential leader</a>
+          <a target="_blank" rel="noopener" href="https://www.rosewoodhotels.com/en/residences" class="brand-pill"><strong>Rosewood Residences</strong> · Luxury brand extension</a>
+          <a target="_blank" rel="noopener" href="https://www.mandarinoriental.com/residences" class="brand-pill"><strong>Mandarin Oriental Residences</strong> · Premium Asia-Pacific positioning</a>
+          <a target="_blank" rel="noopener" href="https://www.bfrg.com/" class="brand-pill"><strong>Branded Residence Group</strong> · Consulting + development</a>
+          <a target="_blank" rel="noopener" href="https://newatlas.com/architecture/icon-el-cosmico-construction/" class="brand-pill"><strong>El Cosmico (BIG + ICON)</strong> · World's first 3D-printed hotel, Marfa TX, opening 2027</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout reveal" style="margin-top: 48px;">
+      Nine sectors. Dozens of operators with proven demand, existing capital, and active pipelines. Every one of them pays a premium for the organic, sculptural architecture that ICON produces at conventional cost. The buyer landscape isn't theoretical — it's operating, expanding, and under-served.
+    </div>
+  </div>
+</section>
+
+<section id="tab-06" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1470723710355-95304d8aece4?w=1600&q=80&auto=format&fit=crop');">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <span class="section-label">06</span>
+      <h2 class="section-title">Case Precedents</h2>
+      <p class="section-subtitle">Where experiential architecture has already proven its economics</p>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+  <div class="container">
+
+    <div class="narrative">
+      <p class="narrative-lead">Operating realities. Architecture-driven experience producing institutional-grade returns.</p>
+    </div>
+
+    <div class="case-card reveal">
+      <div class="case-header">
+        <span class="case-tag">ARCHITECTURE AS PRODUCT</span>
+        <h3 class="case-title">The Sphere, Las Vegas</h3>
+      </div>
+      <div class="case-kpis">
+        <div class="case-kpi">
+          <div class="kpi-value">$2.3B</div>
+          <div class="kpi-label">Construction Cost</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">$420.5M</div>
+          <div class="kpi-label">Annual Gross Revenue (highest-grossing venue)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">17,600</div>
+          <div class="kpi-label">Seats</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">25 years</div>
+          <div class="kpi-label">Abu Dhabi Franchise Deal</div>
+        </div>
+      </div>
+      <div class="case-narrative">
+        <p>Architecture as entertainment product. Abu Dhabi franchise model (construction borne by DCT; Sphere earns royalties) suggests scalable architectural IP revenue.</p>
+      </div>
+      <div class="case-source">
+        <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sphere_(venue)">Sphere</a> · <a target="_blank" rel="noopener" href="https://constructiondive.com/news/msg-sphere-las-vegas-aecom-construction/688255/">Construction Dive</a> · <a target="_blank" rel="noopener" href="https://www.thesphere.com/">thesphere.com</a>
+      </div>
+    </div>
+
+    <div class="content-image reveal" style="margin-top: 32px; margin-bottom: 32px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/U2_performing_at_Sphere_in_Las_Vegas_on_Sept_29_2023_by_Lisette_%285%29.jpg/1280px-U2_performing_at_Sphere_in_Las_Vegas_on_Sept_29_2023_by_Lisette_%285%29.jpg" alt="U2 performing inside The Sphere, Las Vegas — immersive LED interior" loading="lazy">
+      <div class="image-caption">
+        <span>Inside The Sphere — 160,000 SF LED display, the largest in the world. Architecture as immersive product.</span>
+      </div>
+    </div>
+
+    <div class="case-card reveal reveal-delay-1">
+      <div class="case-header">
+        <span class="case-tag">IMMERSIVE ART AT SCALE</span>
+        <h3 class="case-title">Meow Wolf</h3>
+      </div>
+      <div class="case-kpis">
+        <div class="case-kpi">
+          <div class="kpi-value">5</div>
+          <div class="kpi-label">Locations (Santa Fe, Las Vegas, Denver, Grapevine, Houston)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">~$150M</div>
+          <div class="kpi-label">Estimated Annual Revenue</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">$192M</div>
+          <div class="kpi-label">Total Funding Raised</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">~$50</div>
+          <div class="kpi-label">Average Ticket Price</div>
+        </div>
+      </div>
+      <div class="case-narrative">
+        <p>Surreal, non-rectangular environments generating sustainable commercial demand. Caves, tunnels, organic forms — exactly the geometries conventional construction makes prohibitively expensive.</p>
+      </div>
+      <div class="case-source">
+        <a target="_blank" rel="noopener" href="https://meowwolf.com/">meowwolf.com</a> · <a target="_blank" rel="noopener" href="https://www.cbinsights.com/company/meow-wolf/financials">CB Insights</a> <span class="badge estimate">ESTIMATE</span>
+      </div>
+    </div>
+
+    <div class="content-image" style="margin-top: 12px;">
+      <img src="https://images.unsplash.com/photo-1629068399498-8817be11920a?w=1200&q=80&auto=format&fit=crop" alt="Meow Wolf immersive installation — surreal sculptural environments generating $150M+ annual revenue" loading="lazy">
+      <div class="image-caption">
+        <span>Meow Wolf — surreal, non-rectangular environments. Caves, tunnels, organic forms. $192M funded, ~$150M annual revenue.</span>
+        <span>Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@dbrooke">David Brooke Martin</a> / Unsplash</span>
+      </div>
+    </div>
+
+    <div class="case-card reveal reveal-delay-2">
+      <div class="case-header">
+        <span class="case-tag">MEMBERSHIP AS PRODUCT</span>
+        <h3 class="case-title">Soho House</h3>
+      </div>
+      <div class="case-kpis">
+        <div class="case-kpi">
+          <div class="kpi-value">~270K</div>
+          <div class="kpi-label">Global Members (Q3 2025)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">46</div>
+          <div class="kpi-label">Houses across 19 countries</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">+14%</div>
+          <div class="kpi-label">Membership Revenue Growth (Q1 2025)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">$9/sh</div>
+          <div class="kpi-label">Taken Private Jan 2026 (83% premium)</div>
+        </div>
+      </div>
+      <div class="case-narrative">
+        <p>Taken private in January 2026 at an 83% premium — a bet on architecture as brand. Revenue up 8% YoY, EBITDA surging 50%+ annually since 2022. Now pruning hundreds of members from top US locations to sharpen exclusivity. Every house is architecturally distinct — that design identity justifies $3,000+ annual memberships. They scale by replicating feeling, not floorplan. The building is the brand.</p>
+      </div>
+      <div class="case-source">
+        <a target="_blank" rel="noopener" href="https://www.sohohouse.com/">Soho House Investor Relations</a> · <a target="_blank" rel="noopener" href="https://www.nasdaq.com/press-release/soho-house-co-inc-announces-third-quarter-2025-results-2025-11-07">Nasdaq, Q3 2025</a>
+      </div>
+    </div>
+
+    <div class="case-card reveal reveal-delay-3">
+      <div class="case-header">
+        <span class="case-tag">WELLNESS AT INFRASTRUCTURE SCALE</span>
+        <h3 class="case-title">Therme Group</h3>
+      </div>
+      <div class="case-kpis">
+        <div class="case-kpi">
+          <div class="kpi-value">€320M</div>
+          <div class="kpi-label">Macquarie Capital Financing</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">10</div>
+          <div class="kpi-label">Planned US Projects</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">~500K SF</div>
+          <div class="kpi-label">Per Facility</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">$1.5B+</div>
+          <div class="kpi-label">US Development Pipeline</div>
+        </div>
+      </div>
+      <div class="case-narrative">
+        <p>Wellness infrastructure at airport scale. Thermal bathing, waterparks, fitness, hospitality — in structures demanding organic, flowing architecture. Georgetown Company partnership signals institutional confidence.</p>
+      </div>
+      <div class="case-source">
+        <a target="_blank" rel="noopener" href="https://www.thermegroup.com/">thermegroup.com</a> · <a target="_blank" rel="noopener" href="https://www.prnewswire.com/in/news-releases/therme-group-acquires-therme-erding-and-secures-320-million-financing-to-create-the-worlds-largest-wellbeing-infrastructure-platform-302329153.html">PR Newswire, 2024</a>
+      </div>
+    </div>
+
+    <div class="case-card reveal reveal-delay-4">
+      <div class="case-header">
+        <span class="case-tag">ENTERTAINMENT-ANCHORED DEVELOPMENT</span>
+        <h3 class="case-title">Battery Atlanta</h3>
+      </div>
+      <div class="case-kpis">
+        <div class="case-kpi">
+          <div class="kpi-value">$97M</div>
+          <div class="kpi-label">Mixed-Use Revenue (2025, +45% YoY)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">$69M</div>
+          <div class="kpi-label">Mixed-Use Adj. OIBDA (+51% YoY)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">~9M</div>
+          <div class="kpi-label">Annual Visitors (2025)</div>
+        </div>
+        <div class="case-kpi">
+          <div class="kpi-value">3M SF</div>
+          <div class="kpi-label">Retail, Hotels, Dining, Office</div>
+        </div>
+      </div>
+      <div class="case-narrative">
+        <p>The Battery's mixed-use real estate now generates record revenue — $97M in 2025, up 45% — outperforming the baseball operations it was designed to complement. The district became the destination, drawing ~9 million annual visitors to 3M SF of retail, dining, hotels, and office.</p>
+        <p>The ICON angle: Battery Atlanta proves entertainment-anchored development generates outsized returns when the place itself draws foot traffic. Now imagine architecturally distinctive 3D-printed structures replacing conventional mixed-use — pavilions, wellness venues, experiential retail shells — at reduced construction cost and timeline, deployed incrementally as demand proves out.</p>
+      </div>
+      <div class="case-source">
+        <a target="_blank" rel="noopener" href="https://www.bravesholdings.com/news/press-releases/detail/215/atlanta-braves-holdings-reports-fourth-quarter-and-year-end">Atlanta Braves Holdings Q4 2025 Results</a> · <a target="_blank" rel="noopener" href="https://www.sportico.com/leagues/baseball/2026/atlanta-braves-battery-revenue-surges-main-street-1234885613/">Sportico, 2026</a> <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="content-image reveal reveal-delay-5" style="margin-top: 32px; margin-bottom: 32px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/The_Battery_Atlanta_at_night.jpg" alt="The Battery Atlanta at night — entertainment-anchored mixed-use district surrounding Truist Park" loading="lazy">
+      <div class="image-caption">
+        <span>The Battery Atlanta — 3M SF of mixed-use surrounding Truist Park. $97M in revenue (2025, +45% YoY). The district outperforms the stadium.</span>
+        <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://commons.wikimedia.org/wiki/User:Nemov">Nemov</a> / Wikimedia Commons</span>
+      </div>
+    </div>
+
+    <div class="callout reveal reveal-delay-5">
+      Sphere → franchisable IP. Meow Wolf → scalable entertainment. Soho House → community infrastructure. Battery Atlanta → entertainment-anchored mixed-use outperforming its anchor. Common thread: distinctive architecture creates value that transcends primary use. ICON produces this architecture at conventional cost. What's missing is the person who speaks both languages — construction technology and real estate development.
+    </div>
+  </div>
+</section>
+
+<section id="tab-07" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=1600&q=80&auto=format&fit=crop');">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <span class="section-label">07</span>
+      <h2 class="section-title">Héctor Ibarzábal Rodríguez</h2>
+      <p class="section-subtitle">The bridge between construction technology and real estate development</p>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+  <div class="container">
+
+    <div class="narrative reveal">
+      <p class="narrative-lead">ICON builds the technology. Developers build the projects. Someone needs to connect those worlds — to understand the market demand, identify the operators, and articulate why 3D-printed experiential architecture is a commercial opportunity, not just a construction novelty. That's where I come in.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">U.S. · MEXICO · CANADA</div>
+        <div class="timeline-content">Commercial brokerage across office, industrial, and retail — three countries, multiple asset classes. Learned how tenants think about space, how deals get structured, and why certain buildings command premiums while others sit vacant.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">MEXICO CITY · MEXICO</div>
+        <div class="timeline-content">Raised in Mexico City — now the <a target="_blank" rel="noopener" href="https://www.travelandtourworld.com/news/article/mexico-mexico-city-and-cancun-tourism-hit-record-highs-as-international-visitation-jumps-in-2025-all-you-need-to-know/">sixth most-visited country on earth</a> (98M+ international visitors in 2025, +13.6% YoY). Watched neighborhoods reinvent themselves in real time: <a target="_blank" rel="noopener" href="https://www.lonelyplanet.com/articles/lonely-planet-guide-to-roma-and-condesa">Roma-Condesa</a> went from post-earthquake neglect to the city's creative and gastronomic epicenter. <a target="_blank" rel="noopener" href="https://mexiconewsdaily.com/culture/mexico-citys-gnp-seguros-stadium/">Estadio GNP Seguros</a> — a $130M+ Live Nation/OCESA investment — ranked the #1 concert stadium globally in 2025 ($135M in revenue over six months). Everywhere, the pattern repeated: industrial warehouses becoming galleries, Art Deco mansions becoming destination restaurants, emerging corridors retrofitted into spaces with identity — and the identity itself becoming the commercial engine.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">MEXICO · NATIONAL</div>
+        <div class="timeline-content">Beyond the capital, an entire country of emerging experiential tourism markets. <a target="_blank" rel="noopener" href="https://www.wineenthusiast.com/culture/travel/baja-wine-innovation-sustainability/">Valle de Guadalupe</a> went from scrappy vineyards to a luxury wine country now attracting <a target="_blank" rel="noopener" href="https://www.prweb.com/releases/montage-international-thor-urbana-and-life-properties-international-announce-montage-valle-de-guadalupe-in-baja-california-302644946.html">Montage-caliber resorts</a>. <a target="_blank" rel="noopener" href="https://hospitalitydesign.com/projects/development-destinations/2025-hotel-development-mexico/">Tulum</a> went from beach town to eco-resort corridor with its own international airport. <a target="_blank" rel="noopener" href="https://www.travelawaits.com/3015297/inside-mexico-rise-as-a-global-tourism-hub/">Oaxaca, Mérida, San Miguel</a> — all proving that gastronomy, culture, and distinctive physical spaces convert into destination-scale economics. Mexico's <a target="_blank" rel="noopener" href="https://mexicobusiness.news/tech/news/mexicos-luxury-hotel-sector-investments-grew-50-2024">luxury hotel investment grew 50% in 2024</a>. A country-level experiential corridor stretching from Baja to the Yucatán — and one of the highest-potential markets for ICON's commercial vertical.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">MIAMI</div>
+        <div class="timeline-content">Undergrad at the <a target="_blank" rel="noopener" href="https://www.miami.edu/">University of Miami</a> — the U.S. city running the same playbook. <a target="_blank" rel="noopener" href="https://www.dacra.com/about/">Dacra</a> built the <a target="_blank" rel="noopener" href="https://therealdeal.com/miami/2025/12/30/miami-design-district-landlords-land-loan-for-six-buildings/">$1.4B Design District</a>. <a target="_blank" rel="noopener" href="https://wynwoodmiami.com/wynwood-market-report-confirms-districts-transformation-into-true-live-work-play-neighborhood/">Wynwood</a> went from warehouses to 10.3M annual visits. <a target="_blank" rel="noopener" href="https://floridayimby.com/2026/03/construction-nears-topping-out-on-e11even-club-residences-beyond-in-downtown-miami.html">E11EVEN</a> scaled nightlife into twin 65-story towers. Proof that experiential programming and architectural character create commercial gravity at any scale — from pop-up to mega-district.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">VANCOUVER</div>
+        <div class="timeline-content">Five years in Vancouver — <a target="_blank" rel="noopener" href="https://www.destinationvancouver.com/about-us/research-and-insights">C$9.6B in visitor spending (2024)</a>, North America's <a target="_blank" rel="noopener" href="https://creativebc.com/sector/motion-picture/">third-largest film production hub</a>, and a front-row seat to the resort-as-destination model: <a target="_blank" rel="noopener" href="https://www.bcbusiness.ca/Ski-Lesson-Vail-Resorts-Whistler-Blackcomb-takeover-is-starting-to-pay-off">Vail's $1B acquisition of Whistler Blackcomb</a> turned a ski mountain into a four-season experiential platform. Three cities, all natural business development hubs for ICON.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">35+ COUNTRIES · TRAINED EYE</div>
+        <div class="timeline-content">Then the privilege of traveling across 35+ countries, observing how commercial and hospitality concepts take shape in different markets — a fuelling passion that sharpened the instinct for what makes people pay a premium to be somewhere.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">THE DEVELOPER LENS</div>
+        <div class="timeline-content">Years on the brokerage side taught me how developers think about projects: the amenity requirements cities impose in exchange for density, the tenant mix that drives NOI, and why architectural distinction commands premium rents. ICON can raise the bar on what those amenities look like — and those structures can become revenue-generating verticals rather than cost centers.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-label">RICE UNIVERSITY · NOW</div>
+        <div class="timeline-content">Studying where institutional capital flows when conventional assets lose their premium. At <a target="_blank" rel="noopener" href="https://www.rice.edu/">Rice University</a>, Houston, TX. Building <a target="_blank" rel="noopener" href="https://experiential-re-mexico.vercel.app/">market intelligence dashboards</a> that score geographic markets for experiential 3D-printed development.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker" style="background: var(--accent);"></div>
+        <div class="timeline-label">THE BRIDGE</div>
+        <div class="timeline-content">ICON's next chapter is the architecture of experience. The technology exists. The market demand is documented. The commercial partners are identifiable. What's missing is someone who understands both sides — who can identify which operators need this technology, articulate the commercial case, and help ICON connect with the experiential economy at scale.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker" style="background: var(--accent);"></div>
+        <div class="timeline-label">THE DREAM</div>
+        <div class="timeline-content">I grew up watching the live-action <a target="_blank" rel="noopener" href="https://www.imdb.com/title/tt0109813/">Flintstones movie</a> — and I always dreamed I'd be able to live in that rendition of Bedrock. Organic architecture carved from the landscape. Homes that felt like they grew out of the earth. That's becoming possible now. And that's why I see ICON's vision.</div>
+      </div>
+    </div>
+
+    <div class="callout reveal" style="margin-top: 32px;">
+      The municipal amenities thesis: when developers negotiate large-scale projects, cities require parks, public features, experiential offerings. These are typically cost centers. With ICON, those required amenities become architecturally distinctive structures that can be commercialized — wellness pavilions, experiential retail, branded food halls — turning municipal requirements into revenue-generating verticals. That's the opportunity I see.
+    </div>
+
+    <div class="contact-block">
+      <p class="contact-name">Héctor Ibarzábal Rodríguez</p>
+      <p class="contact-detail"><a target="_blank" rel="noopener" href="mailto:ibarzabalhec@gmail.com">ibarzabalhec@gmail.com</a></p>
+      <p class="contact-detail">Rice University · Houston, TX</p>
+      <p class="contact-detail">March 2026</p>
+    </div>
+  </div>
+</section>
+
+<section id="tab-08" class="tab-content">
+  <div class="tab-hero reveal" style="background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600&q=80&auto=format&fit=crop'); min-height: 240px;">
+    <div class="section-header">
+      <div class="accent-line-animated"></div>
+      <span class="section-label">08</span>
+      <h2 class="section-title">Sources & Methodology</h2>
+      <p class="section-subtitle">All statistics in this brief are traceable to the sources listed below</p>
+    </div>
+    <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com">Unsplash</a></span>
+  </div>
+  <div class="container">
+
+    <div class="narrative">
+      <p>Publicly available data only. Institutional research, public filings, and peer-reviewed publications. Each statistic tagged with provenance.</p>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item"><span class="badge sourced">SOURCED</span> Named institutional or government source with direct citation</div>
+      <div class="legend-item"><span class="badge estimate">ESTIMATE</span> Industry estimate from broker reports or analyst projections</div>
+      <div class="legend-item"><span class="badge derived">DERIVED</span> Calculated from multiple sourced inputs</div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: Market Overview</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://globalwellnessinstitute.org/press-room/press-releases/build-well-to-live-well-2025/">Global Wellness Institute (2025)</a> — Wellness real estate market sizing ($584B) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.grandviewresearch.com/industry-analysis/immersive-entertainment-market-report">Grand View Research</a> — Immersive entertainment market projections ($442B by 2030) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://wttc.org/research/economic-impact">World Travel & Tourism Council (2024)</a> — Experience economy contribution ($11.1T) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.knightfrank.com/research/article/2025-09-08-the-global-branded-residence-survey-2025">Knight Frank (2025)</a> — Branded residential premium (30% global average) <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: The Structural Shift</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.moodyscre.com/insights/cre-trends/the-office-sectors-double-whammy/">Moody's Analytics</a> — US office vacancy rates (20.7%) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.cbre.com/insights/books/us-real-estate-market-outlook-2025/retail">CBRE (2025)</a> — US retail vacancy and performance (4.1%) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.demandsage.com/screen-time-statistics/">DemandSage (2025)</a> — Digital screen time statistics (7h 3m US average) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://travelwithcare.org/brief/the-white-lotus-effect/">Travel With Care</a> — White Lotus tourism impact data <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.sohohouse.com/">Soho House Investor Relations</a> — Membership and financial data <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.thermegroup.com/">Therme Group</a> — Corporate and financing data <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.eprkc.com/">EPR Properties (NYSE: EPR)</a> — Experiential REIT data ($7.0B assets) <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: The Geometry Premium</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2023.1237531/full">Frontiers in Computer Science (2023)</a> — Curvilinear architecture and stress reduction <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.nature.com/articles/s41598-024-83791-9">Nature Scientific Reports (2024)</a> — Biophilic design cognitive performance <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11048496/">PMC/NIH (2024)</a> — Architectural geometry and psychological response <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.sciencedirect.com/science/article/pii/S2352710220335567">ScienceDirect (2020)</a> — Formwork cost analysis for curved construction <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.iconbuild.com/technology">ICON Technology</a> — Vulcan/Titan system specifications <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://tracxn.com/d/companies/icon/__Bgn3aXPHPI8T_p1_Xvll55odpTyo9D_pIlDDVWMjTz0">Tracxn</a> — ICON funding history ($500M+) <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: The Market Canvas</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://univdatos.com/reports/experiential-retail-market">UnivDatos</a> — Experiential retail market sizing ($114.6B) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://straitsresearch.com/report/location-based-entertainment-market">Straits Research</a> — Location-based entertainment market ($25.9B by 2030) <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: Case Precedents</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Sphere_(venue)">Wikipedia / Sphere</a> — Construction cost and specifications <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://constructiondive.com/news/msg-sphere-las-vegas-aecom-construction/688255/">Construction Dive</a> — Sphere construction details <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://meowwolf.com/">Meow Wolf</a> — Location and revenue data <span class="badge estimate">ESTIMATE</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.nasdaq.com/press-release/soho-house-co-inc-announces-third-quarter-2025-results-2025-11-07">Nasdaq (2025)</a> — Soho House Q3 2025 results <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.prnewswire.com/in/news-releases/therme-group-acquires-therme-erding-and-secures-320-million-financing-to-create-the-worlds-largest-wellbeing-infrastructure-platform-302329153.html">PR Newswire</a> — Therme Group financing <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.bravesholdings.com/news/press-releases/detail/215/atlanta-braves-holdings-reports-fourth-quarter-and-year-end">Atlanta Braves Holdings</a> — Battery Atlanta Q4/FY2025 financial results ($97M mixed-use revenue) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.sportico.com/leagues/baseball/2026/atlanta-braves-battery-revenue-surges-main-street-1234885613/">Sportico (2026)</a> — Battery revenue surge analysis <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: BIG + Shakira / Gradual Development</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://parametric-architecture.com/big-shakira-stadium-in-madrid/">Parametric Architecture</a> — BIG designs Shakira Stadium at Macondo Park, Madrid <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://news.pollstar.com/2026/03/20/shakira-to-perform-3-night-residency-in-madrid-at-purpose-built-stadium/">Pollstar (2026)</a> — Shakira residency at purpose-built stadium <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.iqmagazine.com/2026/03/shakira-announces-madrid-residency-in-bespoke-stadium/">IQ Magazine (2026)</a> — Bespoke stadium design and cultural programming details <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-section">
+      <h3 class="source-category">Section: ICON Build & Anchor Projects</h3>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.iconbuild.com/">ICON Build</a> — Company overview and project portfolio <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://techcrunch.com/2025/02/14/icon-a-pioneer-in-3d-home-printing-raises-56m-led-by-norwest-tiger-global/">TechCrunch (2025)</a> — ICON $56M Series C funding ($500M+ total raised) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.prnewswire.com/news-releases/icon-secures-more-than-200-million-in-series-b-funding-led-by-norwest-venture-partners-to-support-rapid-growth-and-demand-for-3d-printed-construction-301361202.html">PR Newswire (2021)</a> — Series B funding announcement ($207M) <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.crunchbase.com/organization/icon3d">Crunchbase</a> — ICON investor and funding data <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://big.dk/">BIG (Bjarke Ingels Group)</a> — Design partnership <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.archdaily.com/1004384/big-icon-and-lennar-complete-the-first-3d-printed-model-house-at-the-wolf-ranch-community-in-austin-texas">ArchDaily</a> — Wolf Ranch 100-home community, Georgetown TX <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://newatlas.com/architecture/icon-el-cosmico-construction/">New Atlas</a> — El Cosmico 3D-printed hotel, Marfa TX <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://www.iconbuild.com/projects/community-first-village">ICON</a> — Community First! Village, Austin TX <span class="badge sourced">SOURCED</span>
+      </div>
+      <div class="source-item">
+        <a target="_blank" rel="noopener" href="https://3dprintingindustry.com/news/icon-launches-titan-program-to-commercialize-robotic-3d-printing-construction-system-for-builders-249907/">3D Printing Industry (2026)</a> — Titan Program commercial launch <span class="badge sourced">SOURCED</span>
+      </div>
+    </div>
+
+    <div class="source-footer">
+      <p>This brief was prepared independently by Héctor Ibarzábal Rodríguez. It does not represent the views of any institution or employer. All data is sourced from public records as of March 2026.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer style="text-align: center; padding: 48px 24px 64px; border-top: 1px solid var(--border); color: var(--text-dim); font-size: 0.72rem; letter-spacing: 0.5px;">
+    <div style="margin-bottom: 12px; color: var(--accent); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 0.6rem;">ICON × Experiential Architecture</div>
+    <div>Prepared by Héctor Ibarzábal Rodríguez · Rice University MBA · March 2026</div>
+    <div style="margin-top: 8px;">
+      <a href="#overview" style="color: var(--accent); border: none; font-size: 0.7rem;">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+/* ============================================================================
+   MARKET INTELLIGENCE DASHBOARD - JAVASCRIPT
+   Tab navigation, animations, and interactive components
+   ============================================================================ */
+
+/* ============================================================================
+   TAB NAVIGATION SYSTEM
+   ============================================================================ */
+const TAB_MAP = {
+  '01': 'overview',
+  '02': 'structural-shift',
+  '03': 'geometry-premium',
+  '04': 'market-canvas',
+  '05': 'buyer-landscape',
+  '06': 'case-precedents',
+  '07': 'hector-ibarzabal',
+  '08': 'sources'
+};
+
+const REVERSE_TAB_MAP = Object.fromEntries(
+  Object.entries(TAB_MAP).map(([key, value]) => [value, key])
+);
+
+/**
+ * Activate a tab by ID
+ * @param {string} tabId - Tab identifier (e.g., '01', '02', etc.)
+ */
+function activateTab(tabId) {
+  // Remove active class from all nav links and tab content
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.classList.remove('active');
+  });
+
+  document.querySelectorAll('.tab-content').forEach(content => {
+    content.classList.remove('active');
+  });
+
+  // Add active class to target elements
+  const navLink = document.querySelector(`[data-tab="${tabId}"]`);
+  const tabContent = document.getElementById(`tab-${tabId}`);
+
+  if (navLink) {
+    navLink.classList.add('active');
+  }
+
+  if (tabContent) {
+    tabContent.classList.add('active');
+
+    // Trigger animations on newly active tab
+    setTimeout(() => {
+      triggerRevealAnimations();
+      triggerCounterAnimations(tabContent);
+    }, 100);
+  }
+
+  // Update URL hash
+  const hashValue = TAB_MAP[tabId];
+  window.history.pushState(null, '', `#${hashValue}`);
+
+  // Close mobile menu if open
+  closeMobileMenu();
+
+  // Scroll to top
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/**
+ * Activate tab by URL hash
+ */
+function activateTabByHash() {
+  let hash = window.location.hash.slice(1) || 'overview';
+
+  // If hash is empty or invalid, default to overview
+  if (!hash || !REVERSE_TAB_MAP[hash]) {
+    hash = 'overview';
+  }
+
+  const tabId = REVERSE_TAB_MAP[hash] || '01';
+  activateTab(tabId);
+}
+
+/**
+ * Navigate between tabs with arrow keys
+ */
+function setupArrowKeyNavigation() {
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      const currentLink = document.querySelector('.nav-link.active');
+      if (!currentLink) return;
+
+      const tabId = currentLink.getAttribute('data-tab');
+      const tabIds = Object.keys(TAB_MAP);
+      const currentIndex = tabIds.indexOf(tabId);
+
+      let nextIndex;
+      if (event.key === 'ArrowRight') {
+        nextIndex = (currentIndex + 1) % tabIds.length;
+      } else {
+        nextIndex = (currentIndex - 1 + tabIds.length) % tabIds.length;
+      }
+
+      activateTab(tabIds[nextIndex]);
+      event.preventDefault();
+    }
+  });
+}
+
+/**
+ * Setup nav link click handlers
+ */
+function setupNavLinkHandlers() {
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const tabId = link.getAttribute('data-tab');
+      activateTab(tabId);
+    });
+  });
+}
+
+/* ============================================================================
+   MOBILE MENU SYSTEM
+   ============================================================================ */
+
+/**
+ * Toggle mobile menu
+ */
+function toggleMobileMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (!hamburger || !mobileMenu) return;
+
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+
+  if (mobileMenu.classList.contains('open')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+/**
+ * Close mobile menu
+ */
+function closeMobileMenu() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (hamburger && mobileMenu) {
+    hamburger.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+}
+
+/**
+ * Setup mobile menu handlers
+ */
+function setupMobileMenuHandlers() {
+  const hamburger = document.querySelector('.hamburger');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  if (hamburger) {
+    hamburger.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Close menu on link click
+  if (mobileMenu) {
+    mobileMenu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+  }
+
+  // Close menu on window resize > 768px
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeMobileMenu();
+    }
+  });
+}
+
+/* ============================================================================
+   REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+   ============================================================================ */
+
+/**
+ * Setup intersection observer for reveal animations
+ */
+function setupRevealObserver() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Optional: unobserve after revealing to save performance
+          // observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    }
+  );
+
+  document.querySelectorAll('.reveal').forEach(element => {
+    observer.observe(element);
+  });
+}
+
+/**
+ * Trigger reveal animations on active tab
+ */
+function triggerRevealAnimations() {
+  document.querySelectorAll('.tab-content.active .reveal').forEach(element => {
+    element.classList.add('visible');
+  });
+}
+
+/* ============================================================================
+   ANIMATED COUNTERS
+   ============================================================================ */
+
+/**
+ * Animate a counter from 0 to end value
+ * @param {HTMLElement} element - Element containing the number
+ * @param {number} endValue - Target value to count to
+ * @param {number} duration - Animation duration in ms (default: 1200)
+ */
+function animateCounter(element, endValue, duration = 1200) {
+  if (!element || !endValue) return;
+
+  let startValue = 0;
+  const startTime = performance.now();
+
+  // Extract any non-numeric prefix/suffix
+  const text = element.textContent;
+  const matches = text.match(/^([^\d-]*)(-?\d+(?:[.,]\d+)?)(.*)/);
+  let prefix = '';
+  let suffix = '';
+
+  if (matches) {
+    prefix = matches[1];
+    suffix = matches[3];
+  }
+
+  const animate = (currentTime) => {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+
+    // Cubic ease-out timing
+    const easeProgress = 1 - Math.pow(1 - progress, 3);
+
+    const current = Math.floor(startValue + (endValue - startValue) * easeProgress);
+    const formattedValue = formatNumber(current);
+
+    element.textContent = `${prefix}${formattedValue}${suffix}`;
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    }
+  };
+
+  requestAnimationFrame(animate);
+}
+
+/**
+ * Format number with commas and appropriate scale (B, M, K)
+ * @param {number} num - Number to format
+ * @returns {string} Formatted number
+ */
+function formatNumber(num) {
+  if (num >= 1000000000) {
+    return (num / 1000000000).toFixed(1) + 'B';
+  }
+  if (num >= 1000000) {
+    return (num / 1000000).toFixed(1) + 'M';
+  }
+  if (num >= 1000) {
+    return (num / 1000).toFixed(1) + 'K';
+  }
+
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+/**
+ * Trigger counter animations for elements in active tab
+ * @param {HTMLElement} container - Container element (usually tab-content)
+ */
+function triggerCounterAnimations(container) {
+  if (!container) return;
+
+  container.querySelectorAll('[data-value]').forEach(element => {
+    const value = parseInt(element.getAttribute('data-value'), 10);
+    if (!isNaN(value)) {
+      animateCounter(element, value);
+    }
+  });
+}
+
+/* ============================================================================
+   EXPANDABLE SECTORS
+   ============================================================================ */
+
+/**
+ * Setup expandable sector cards
+ */
+function setupSectorCards() {
+  document.querySelectorAll('.sector-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const card = header.closest('.sector-card');
+      if (card) {
+        card.classList.toggle('open');
+        const button = card.querySelector('.sector-toggle');
+        if (button) {
+          button.textContent = card.classList.contains('open') ? '−' : '+';
+        }
+      }
+    });
+  });
+}
+
+/* ============================================================================
+   INITIALIZATION
+   ============================================================================ */
+
+/**
+ * Initialize dashboard on DOMContentLoaded
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize tab from URL hash or default to first tab
+  activateTabByHash();
+
+  // Setup all event listeners
+  setupNavLinkHandlers();
+  setupArrowKeyNavigation();
+  setupMobileMenuHandlers();
+  setupRevealObserver();
+  setupSectorCards();
+
+  // Handle hash changes (browser back/forward)
+  window.addEventListener('hashchange', activateTabByHash);
+  window.addEventListener('popstate', activateTabByHash);
+});
+
+/* ============================================================================
+   UTILITY FUNCTIONS
+   ============================================================================ */
+
+/**
+ * Smooth scroll to element
+ * @param {string} selector - CSS selector of target element
+ */
+function smoothScrollTo(selector) {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+/**
+ * Debounce function for performance-critical operations
+ * @param {Function} func - Function to debounce
+ * @param {number} wait - Wait time in ms
+ * @returns {Function} Debounced function
+ */
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+/**
+ * Throttle function for performance-critical operations
+ * @param {Function} func - Function to throttle
+ * @param {number} limit - Time limit in ms
+ * @returns {Function} Throttled function
+ */
+function throttle(func, limit) {
+  let inThrottle;
+  return function(...args) {
+    if (!inThrottle) {
+      func.apply(this, args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+/* ============================================================================
+   ADVANCED INTERACTIONS (OPTIONAL ENHANCEMENTS)
+   ============================================================================ */
+
+/**
+ * Copy text to clipboard
+ * @param {string} text - Text to copy
+ */
+function copyToClipboard(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => {
+      console.log('Copied to clipboard');
+    }).catch(err => {
+      console.error('Failed to copy:', err);
+    });
+  } else {
+    // Fallback for older browsers
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  }
+}
+
+/**
+ * Add click handlers for copyable elements
+ */
+function setupCopyableElements() {
+  document.querySelectorAll('[data-copyable]').forEach(element => {
+    element.style.cursor = 'pointer';
+    element.addEventListener('click', () => {
+      const text = element.textContent || element.getAttribute('data-copyable');
+      copyToClipboard(text);
+
+      // Visual feedback
+      const originalText = element.textContent;
+      element.textContent = 'Copied!';
+      setTimeout(() => {
+        element.textContent = originalText;
+      }, 2000);
+    });
+  });
+}
+
+/**
+ * Setup data attributes for dynamic content loading
+ * Allows lazy-loading or dynamic component mounting
+ */
+function setupDynamicComponents() {
+  document.querySelectorAll('[data-component]').forEach(element => {
+    const componentType = element.getAttribute('data-component');
+    // Reserved for future component loading logic
+    // Example: loadComponent(componentType, element);
+  });
+}
+
+/**
+ * Setup accessibility features
+ */
+function setupAccessibility() {
+  // Add keyboard focus indicators
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Tab') {
+      document.body.classList.add('keyboard-nav');
+    }
+  });
+
+  document.addEventListener('mousedown', () => {
+    document.body.classList.remove('keyboard-nav');
+  });
+
+  // Enhance focus styles in CSS with:
+  // body.keyboard-nav *:focus-visible { outline: 2px solid var(--accent); }
+}
+
+/* ============================================================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================================================ */
+
+/**
+ * Lazy load images
+ */
+function setupLazyImages() {
+  if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+          }
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    document.querySelectorAll('img[data-src]').forEach(img => {
+      imageObserver.observe(img);
+    });
+  }
+}
+
+/**
+ * Preload critical resources
+ */
+function preloadResources() {
+  // Example: preload fonts, critical images, etc.
+  // const link = document.createElement('link');
+  // link.rel = 'preload';
+  // link.as = 'font';
+  // link.href = '/fonts/space-grotesk.woff2';
+  // document.head.appendChild(link);
+}
+
+/* ============================================================================
+   EVENT DELEGATION FOR DYNAMIC CONTENT
+   ============================================================================ */
+
+/**
+ * Setup event delegation for dynamically added elements
+ */
+function setupEventDelegation() {
+  // Delegate clicks on brand pills
+  document.addEventListener('click', (event) => {
+    if (event.target.closest('.brand-pill')) {
+      const pill = event.target.closest('.brand-pill');
+      const brandName = pill.textContent.trim();
+      console.log('Selected brand:', brandName);
+      // Add custom logic here
+    }
+  });
+
+  // Delegate clicks on investor cards
+  document.addEventListener('click', (event) => {
+    if (event.target.closest('.investor-card')) {
+      const card = event.target.closest('.investor-card');
+      const investorName = card.querySelector('.investor-name')?.textContent;
+      console.log('Selected investor:', investorName);
+      // Add custom logic here
+    }
+  });
+}
+
+/* ============================================================================
+   MODULE EXPORTS (for testing or modular usage)
+   ============================================================================ */
+
+/* ============================================================================
+   ENHANCED INTERACTIONS — Scroll effects, progress, content reveal
+   ============================================================================ */
+
+/**
+ * Nav shadow on scroll
+ */
+function setupNavScrollEffect() {
+  const nav = document.querySelector('.main-nav');
+  if (!nav) return;
+
+  const onScroll = throttle(() => {
+    if (window.scrollY > 20) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  }, 100);
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+/**
+ * Reveal content images on scroll (they use .content-image class but not .reveal)
+ */
+function setupContentImageReveal() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+  );
+
+  document.querySelectorAll('.content-image').forEach(el => {
+    observer.observe(el);
+  });
+}
+
+/**
+ * Scroll progress indicator in nav bar
+ */
+function setupScrollProgress() {
+  const bar = document.createElement('div');
+  bar.id = 'scroll-progress';
+  bar.style.cssText = `
+    position: fixed;
+    top: 55px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+    z-index: 1001;
+    transition: width 0.1s linear;
+    pointer-events: none;
+  `;
+  document.body.appendChild(bar);
+
+  const onScroll = throttle(() => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = scrollPercent + '%';
+  }, 50);
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+/**
+ * Enhanced reveal observer — also observes source-sections and container blocks
+ */
+function setupEnhancedRevealObserver() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+  );
+
+  // Observe all containers in active tabs too
+  document.querySelectorAll('.source-section, .investor-grid, .case-grid').forEach(el => {
+    el.classList.add('reveal');
+    observer.observe(el);
+  });
+}
+
+/**
+ * Animate market chart bars on scroll into view
+ */
+function setupMarketChartAnimation() {
+  const chart = document.querySelector('.market-chart');
+  if (!chart) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Stagger each bar animation
+        chart.querySelectorAll('.chart-bar-fill, .chart-total-fill').forEach((bar, i) => {
+          setTimeout(() => {
+            bar.style.width = bar.getAttribute('data-width');
+          }, i * 180);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(chart);
+}
+
+// Wire up new enhancements in DOMContentLoaded
+const origInit = document.addEventListener;
+document.addEventListener('DOMContentLoaded', () => {
+  setupNavScrollEffect();
+  setupContentImageReveal();
+  setupScrollProgress();
+  setupEnhancedRevealObserver();
+  setupMarketChartAnimation();
+});
+
+  </script>
+
+</body>
+</html>
