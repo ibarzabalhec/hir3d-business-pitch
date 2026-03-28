@@ -4286,6 +4286,14 @@ function activateTab(tabId) {
 
   if (navLink) {
     navLink.classList.add('active');
+    // Center the active nav link in the scrollable nav bar
+    const navLinks = navLink.closest('.nav-links');
+    if (navLinks) {
+      const linkRect = navLink.getBoundingClientRect();
+      const navRect = navLinks.getBoundingClientRect();
+      const scrollLeft = navLinks.scrollLeft + (linkRect.left - navRect.left) - (navRect.width / 2) + (linkRect.width / 2);
+      navLinks.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+    }
   }
 
   if (tabContent) {
