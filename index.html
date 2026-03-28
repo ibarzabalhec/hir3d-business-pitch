@@ -2917,9 +2917,111 @@ a:hover {
       }
     }
 
+    /* ============================================================================
+       SCROLL PROGRESS BAR
+       ============================================================================ */
+    .scroll-progress {
+      position: fixed;
+      top: 56px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-bright));
+      z-index: 1001;
+      transition: width 0.15s ease-out;
+      pointer-events: none;
+    }
+
+    /* ============================================================================
+       MINI-TOC — Desktop only
+       ============================================================================ */
+    .mini-toc {
+      position: fixed;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      pointer-events: none;
+    }
+    .mini-toc.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .mini-toc-dot {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 7px 0;
+      cursor: pointer;
+    }
+    .mini-toc-dot::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--text-dim);
+      opacity: 0.35;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+    .mini-toc-dot:hover::after,
+    .mini-toc-dot.active::after {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      opacity: 1;
+    }
+    .mini-toc-label {
+      position: absolute;
+      right: 20px;
+      white-space: nowrap;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: var(--text-dim);
+      opacity: 0;
+      transform: translateX(6px);
+      transition: all 0.25s ease;
+      pointer-events: none;
+    }
+    .mini-toc-dot:hover .mini-toc-label,
+    .mini-toc-dot.active .mini-toc-label {
+      opacity: 1;
+      transform: translateX(0);
+      color: var(--accent);
+    }
+    /* Connecting line between dots */
+    .mini-toc::before {
+      content: '';
+      position: absolute;
+      right: 3px;
+      top: 10px;
+      bottom: 10px;
+      width: 1px;
+      background: var(--border);
+      opacity: 0.3;
+    }
+
+    /* Hide mini-TOC on mobile/tablet */
+    @media (max-width: 1024px) {
+      .mini-toc { display: none; }
+    }
+
   </style>
 </head>
 <body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- MINI-TOC — built dynamically by JS -->
+  <nav class="mini-toc" aria-label="Section progress"></nav>
 
   <!-- NAVIGATION -->
   <nav class="main-nav" role="navigation" aria-label="Main navigation">
@@ -4845,20 +4947,8 @@ function setupContentImageReveal() {
  * Scroll progress indicator in nav bar
  */
 function setupScrollProgress() {
-  const bar = document.createElement('div');
-  bar.id = 'scroll-progress';
-  bar.style.cssText = `
-    position: fixed;
-    top: 55px;
-    left: 0;
-    height: 2px;
-    width: 0%;
-    background: linear-gradient(90deg, var(--accent), var(--accent-bright));
-    z-index: 1001;
-    transition: width 0.1s linear;
-    pointer-events: none;
-  `;
-  document.body.appendChild(bar);
+  const bar = document.querySelector('.scroll-progress');
+  if (!bar) return;
 
   const onScroll = throttle(() => {
     const scrollTop = window.scrollY;
@@ -4868,6 +4958,89 @@ function setupScrollProgress() {
   }, 50);
 
   window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+/**
+ * Mini-TOC — builds dots from section-headers in the active tab,
+ * highlights current section on scroll, and scrolls to section on click.
+ * Desktop only (hidden via CSS on ≤1024px).
+ */
+function setupMiniToc() {
+  const toc = document.querySelector('.mini-toc');
+  if (!toc) return;
+
+  let dots = [];
+  let sections = [];
+
+  function buildToc() {
+    toc.innerHTML = '';
+    dots = [];
+    sections = [];
+
+    const activeTab = document.querySelector('.tab-content.active');
+    if (!activeTab) return;
+
+    // Gather all section-headers with an h2 or h3 inside the active tab
+    const headers = activeTab.querySelectorAll('.section-header');
+    headers.forEach(header => {
+      const heading = header.querySelector('h2, h3');
+      if (!heading) return;
+      const label = heading.textContent.trim();
+      // Skip very short or duplicate labels
+      if (label.length < 3) return;
+
+      const dot = document.createElement('div');
+      dot.className = 'mini-toc-dot';
+      dot.innerHTML = '<span class="mini-toc-label">' + label + '</span>';
+      dot.addEventListener('click', () => {
+        header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      toc.appendChild(dot);
+      dots.push(dot);
+      sections.push(header);
+    });
+
+    // Show TOC only if there are 2+ sections
+    if (dots.length >= 2) {
+      toc.classList.add('visible');
+    } else {
+      toc.classList.remove('visible');
+    }
+
+    updateActiveDot();
+  }
+
+  function updateActiveDot() {
+    if (sections.length === 0) return;
+
+    const scrollY = window.scrollY + window.innerHeight * 0.35;
+    let activeIndex = 0;
+
+    for (let i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].getBoundingClientRect().top + window.scrollY <= scrollY) {
+        activeIndex = i;
+        break;
+      }
+    }
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === activeIndex);
+    });
+  }
+
+  // Rebuild TOC when tab changes — hook into activateTab
+  const origActivateTab = window.activateTab;
+  window.activateTab = function(tabId) {
+    origActivateTab(tabId);
+    setTimeout(buildToc, 150);
+  };
+
+  // Update active dot on scroll
+  window.addEventListener('scroll', throttle(updateActiveDot, 80), { passive: true });
+
+  // Initial build
+  buildToc();
 }
 
 /**
@@ -4922,6 +5095,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupNavScrollEffect();
   setupContentImageReveal();
   setupScrollProgress();
+  setupMiniToc();
   setupEnhancedRevealObserver();
   setupMarketChartAnimation();
 });
