@@ -332,7 +332,7 @@ a:hover {
   font-size: 1.2rem;
   font-style: italic;
   color: var(--accent);
-  max-width: 700px;
+  max-width: min(700px, 90vw);
   line-height: 1.6;
   margin-top: 24px;
 }
@@ -506,7 +506,7 @@ a:hover {
    NARRATIVE BLOCKS
    ============================================================================ */
 .narrative {
-  max-width: 780px;
+  max-width: min(780px, 100%);
   margin-left: auto;
   margin-right: auto;
   padding-left: 48px;
@@ -2116,7 +2116,7 @@ a:hover {
       }
 
       table {
-        min-width: 480px;
+        min-width: 320px;
       }
 
       /* Touch-friendly link targets */
@@ -2243,6 +2243,36 @@ a:hover {
       .section-hero {
         padding-top: 64px;
         padding-bottom: 24px;
+      }
+
+      .hero-subtitle {
+        font-size: 0.95rem !important;
+      }
+
+      .timeline {
+        padding-left: 20px;
+      }
+      .timeline::before {
+        left: 2px;
+      }
+      .timeline-marker {
+        left: -20px;
+      }
+      .timeline-content {
+        font-size: 0.84rem;
+      }
+
+      .chart-bar-label, .chart-total-label {
+        width: 70px;
+        font-size: 0.68rem;
+      }
+      .chart-bar-value, .chart-total-value {
+        width: 48px;
+        font-size: 0.72rem;
+      }
+
+      table {
+        min-width: auto;
       }
     }
 
@@ -2938,15 +2968,15 @@ a:hover {
     </div>
     <div class="hero-content-inner">
       <div class="accent-line-animated"></div>
-      <h1 style="max-width: 900px; margin-bottom: 24px;">The Most Valuable Architecture Won't Be Rectangular.</h1>
-      <div class="hero-subtitle" style="font-size: 1.3rem; max-width: 750px;">A market intelligence brief on the experiential, hospitality, and wellness market opportunity for 3D-printed construction.</div>
+      <h1 style="max-width: min(900px, 90vw); margin-bottom: 24px;">The Most Valuable Architecture Won't Be Rectangular.</h1>
+      <div class="hero-subtitle" style="max-width: min(750px, 90vw);">A market intelligence brief on the experiential, hospitality, and wellness market opportunity for 3D-printed construction.</div>
       <div class="hero-meta" style="margin-top: 32px;">March 2026 · Héctor Ibarzábal Rodríguez · Rice University</div>
     </div>
     <span class="image-credit">Photo: <a target="_blank" rel="noopener" href="https://unsplash.com/@mahdibafande">Unsplash</a></span>
   </div>
 
   <div class="container reveal-delay-1">
-    <div class="narrative" style="max-width: 780px; margin-bottom: 2rem;">
+    <div class="narrative" style="max-width: min(780px, 100%); margin-bottom: 2rem;">
       <p class="narrative-lead">Prepared by <strong>Héctor Ibarzábal Rodríguez</strong> — seven years brokering office, industrial, and retail across Mexico, the U.S., and Canada. Watched capital leave conventional assets and chase experience. Now at Rice studying where it goes next.</p>
       <p style="font-size: 0.82rem; color: var(--text-dim); margin-top: 12px;">See also: <a target="_blank" rel="noopener" href="https://experiential-re-mexico.vercel.app/" style="border-bottom: 1px solid rgba(200,149,108,0.25);">Geographic Market Intelligence — Experiential Real Estate in Mexico</a>, a companion dashboard scoring 20 markets for 3D-printed experiential development.</p>
     </div>
